@@ -45,28 +45,33 @@
 </head>
 
 <body>
-    <nav class="navbar py-3 navbar-light navbar-expand-md fixed-top border-primary d-sm-block navigation-clean-button" style="background-color: rgb(255,255,255); box-shadow: 3px 0 20px rgba(0,0,0,.8);transition: all .5s ease-in-out">
+    <nav class="navbar py-2 navbar-light navbar-expand-md fixed-top border-primary d-sm-block navigation-clean-button" style="background-color: rgb(255,255,255); box-shadow: 3px 0 20px rgba(0,0,0,.8);transition: all .5s ease-in-out">
         <div class="container"><a class="navbar-brand" href="#">E-Local</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color: rgb(34,34,34);">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Mega Menu</a></li>
                     <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Services</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="#"><i class="fa fa-shopping-cart" style="margin: 2px;"></i>2</a><a class="login" href="#">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span></div>
+                </ul><span class="navbar-text actions"> <a class="login" href="#"><i class="fa fa-shopping-cart" style="margin: 2px;"></i>2</a>
+                <!-- <a class="login" href="login.php">Log In</a> -->
+                <a class="btn btn-light action-button" role="button" href="register.php">Sign Up</a>
+            </span></div>
         </div>
     </nav>
-    <div class="login-clean" style="margin-top: 80px; padding: 120px 0;background-color: rgb(193,218,239);">
+    <div class="login-clean" style="margin-top: 70px; padding: 120px 0;background-color: rgb(193,218,239);">
         <form method="post  clear-all">
             <h2 class="text-dark fs-20 text-center mb-3">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
             <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group mb-1"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+            <div class="form-group mb-1">
+                <a class="btn btn-primary btn-block" type="submit" href='index.php';">Log In</a>
+            </div>
             <a class="forgot a-color mb-1" href="#">Forgot Password?</a>
             <a class="forgot" href="#">Don't have an account!&nbsp;Sign Up&nbsp;</a>
         </form>

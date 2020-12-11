@@ -1,12 +1,12 @@
 <?php 
 include('header.php');
 ?>
-    <div data-bs-parallax-bg="true" style="background-image: url(&quot;assets/img/order-banner.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;background-repeat: no-repeat;"></div>
+    <div style="background-image: url(&quot;assets/img/order-banner.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;background-repeat: no-repeat;"></div>
     <section>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#"><span>Library</span></a></li>
-            <li class="breadcrumb-item"><a href="#"><span>Data</span></a></li>
+            <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
+            <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
         </ol>
         <div class="row py-5">
             <div class="col-md-3">
@@ -87,13 +87,13 @@ include('header.php');
                 </div>
                 <nav>
                     <ul class="pagination justify-content-center">
-                        <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                        <li class="page-item"><a class="page-link" href="#!" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                        <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#!" aria-label="Next"><span aria-hidden="true">»</span></a></li>
                     </ul>
                 </nav>
             </div>

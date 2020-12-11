@@ -3,9 +3,9 @@ include('header.php');
 
 ?>
     <ol class="breadcrumb" style="margin-top: 70px;">
-        <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a href="#"><span>Library</span></a></li>
-        <li class="breadcrumb-item"><a href="#"><span>Data</span></a></li>
+        <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
+        <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
     </ol>
     <h2 class="text-center py-5">Shopping Cart</h2>
      <div class="row pb-5">
@@ -119,9 +119,9 @@ include('header.php');
                     </div>                  
                 </div>
             </div>
-            <div class="mt-5 d-flex align-items-center bg-light py-3 px-2">
+            <div class="mt-5 d-flex align-items-center bg-warning py-3 px-2">
                 <h5 class="fs-20">Expected Shipping Delivery: </h5>&nbsp;
-                <span class="fs-14 text-secondary">Thu., 12.03. - Mon., 16.03.</span>
+                <span class="fs-14 text-dark">Thu., 12.03. - Mon., 16.03.</span>
             </div>
         </div>
         <div class="col-md-5 bg-light h-100 pt-1 pb-4 px-2">

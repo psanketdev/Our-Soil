@@ -6,9 +6,9 @@ include('header.php');
     <div data-bs-parallax-bg="true" style="background-image: url(&quot;assets/img/clay%20pot%20import.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;"></div>
     <section class="new-products">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#"><span>Library</span></a></li>
-            <li class="breadcrumb-item"><a href="#"><span>Data</span></a></li>
+            <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
+            <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
         </ol>
         <div class="row py-5">
              <div class="col-md-3">
@@ -277,7 +277,7 @@ include('header.php');
                                         </button>
                                     </div>
                             </div>
-                        </li> 
+                        </li> !
                     </ul>	
                   </div>
                 </section>

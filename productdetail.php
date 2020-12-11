@@ -3,9 +3,9 @@ include('header.php');
 
 ?>
     <ol class="breadcrumb" style="margin-top: 70px;">
-        <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a href="#"><span>Library</span></a></li>
-        <li class="breadcrumb-item"><a href="#"><span>Data</span></a></li>
+        <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
+        <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
     </ol>
 
     <!-- product details section start-->
@@ -82,7 +82,7 @@ include('header.php');
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-bold">Related Product</h2>
-                <button class="btn btn-primary b-radius fs-14">View All</button>
+                <a href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-1-items">  

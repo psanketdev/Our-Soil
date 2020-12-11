@@ -39,41 +39,41 @@
                     <!-- <li class="nav-item mr-3" role="presentation"></li> -->
                     <li class="nav-item dropdown megamenu mr-2">
                         <a class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#">Mega Menu</a>
-                        <div class="dropdown-menu animate slideIn" role="menu" style="background-color: #8ea7ff;">
+                        <div class="dropdown-menu animate slideIn" role="menu" style="background-color:#fff;">
                             <div class="container" style="padding: 30px 0">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h1 class="text-white">Title</h1>
-                                        <hr style="background-color: #ffffff;">
-                                        <h5 class="text-white">Title 1</h5>
-                                        <h5 class="text-white">Title 2</h5>
-                                        <h5 class="text-white">Title 3</h5>
-                                        <h5 class="text-white">Title 4</h5>
-                                        <h5 class="text-white">Title 5</h5>
-                                        <h5 class="text-white">Title 6</h5>
-                                        <h5 class="text-white">Title 7</h5>
+                                        <h1>Title</h1>
+                                        <hr style="background-color: #e4e4e4;">
+                                        <h5 class="pb-2">Title 1</h5>
+                                        <h5 class="pb-2">Title 2</h5>
+                                        <h5 class="pb-2">Title 3</h5>
+                                        <h5 class="pb-2">Title 4</h5>
+                                        <h5 class="pb-2">Title 5</h5>
+                                        <h5 class="pb-2">Title 6</h5>
+                                        <h5 class="pb-2">Title 7</h5>
                                     </div>
                                     <div class="col-md-4">
-                                        <h1 class="text-white">Title</h1>
-                                        <hr style="background-color: #ffffff;">
-                                        <h5 class="text-white">Title 1</h5>
-                                        <h5 class="text-white">Title 2</h5>
-                                        <h5 class="text-white">Title 3</h5>
-                                        <h5 class="text-white">Title 4</h5>
-                                        <h5 class="text-white">Title 5</h5>
-                                        <h5 class="text-white">Title 6</h5>
-                                        <h5 class="text-white">Title 7</h5>
+                                        <h1>Title</h1>
+                                        <hr style="background-color: #e4e4e4;">
+                                        <h5 class="pb-2">Title 1</h5>
+                                        <h5 class="pb-2">Title 2</h5>
+                                        <h5 class="pb-2">Title 3</h5>
+                                        <h5 class="pb-2">Title 4</h5>
+                                        <h5 class="pb-2">Title 5</h5>
+                                        <h5 class="pb-2">Title 6</h5>
+                                        <h5 class="pb-2">Title 7</h5>
                                     </div>
                                     <div class="col-md-4">
-                                        <h1 class="text-white">Title</h1>
-                                        <hr style="background-color: #ffffff;"><img class="img-fluid" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"></div>
+                                        <h1>Title</h1>
+                                        <hr style="background-color: #e4e4e4;"><img class="img-fluid" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"></div>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#FIXME" class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown</a>
-                        <div class="dropdown-menu slideIn" role="menu">
+                        <div class="dropdown-menu animate slideIn mt-3" role="menu">
                             <a class="dropdown-item" role="presentation" href="#">First Item</a>
                             <a class="dropdown-item" role="presentation" href="#">Second Item</a>
                             <a class="dropdown-item" role="presentation" href="#">Third Item</a>
@@ -102,10 +102,10 @@
                         <a href="#FIXME" class="nav-link dropdown-toggle text-white" data-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
                             <i class="fa fa-user-o pr-1 text-success" aria-hidden="true"></i>Onkar Kumbhar
                         </a>
-                        <div class="dropdown-menu slideIn" role="menu">
+                        <div class="dropdown-menu animate slideIn mt-3" role="menu">
                             <a href="myprofile.php" class="dropdown-item" role="presentation">My Profile</a>
                             <a href="myorders.php" class="dropdown-item" role="presentation" >My Orders</a>
-                            <a href="./settings.php" class="dropdown-item" role="presentation">Settings</a>
+                            <a href="settings.php" class="dropdown-item" role="presentation">Settings</a>
                         </div>
                     </li>
                 </ul>      

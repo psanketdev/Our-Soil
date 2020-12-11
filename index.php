@@ -310,8 +310,8 @@ include('header.php');
                 </div>
             </div>
             <div class="text-center mt-5">
-              <button class="btn btn-outline-danger px-5" type="button">View All
-             </button>
+              <a href="products.php" class="btn btn-outline-danger px-5" type="button">View All
+            </a>
             </div>
         </div>
     </section>
@@ -322,7 +322,7 @@ include('header.php');
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-bold">BestSellers</h2>
-                <button class="btn btn-primary b-radius fs-14">View All</button>
+                <a href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-1-items">  
@@ -776,7 +776,7 @@ include('header.php');
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-bold">Best Deals</h2>
-                <button class="btn btn-primary b-radius fs-14">View All</button>
+                <a  href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-2-items">  
@@ -1019,7 +1019,7 @@ include('header.php');
                     <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"><small class="form-text text-danger d-none">Please enter a valid details.</small></div>
                     <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
                     <div class="form-group mt-4">
-                        <button class="btn btn-gradient btn-shadow w-100 " type="submit">submit</button>
+                        <button class="btn btn-gradient btn-shadow w-100" type="submit">submit</button>
                     </div>
                 </form>
             </div>

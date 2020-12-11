@@ -51,13 +51,14 @@ dl, ol, ul {
     #9a0c10 100%
   );
   background: linear-gradient(to right, #f6474f 0%, #cf0008 50%, #9a0c10 100%);
+  background: #f6474f;
   color: #fff;
   border: none;
   font-weight: 600;
 }
 
 .register .btn.log:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active {
-    background: linear-gradient(to right, #f6474f 0%, #cf0008 50%, #9a0c10 100%);
+    background:#f6474f;
 }
 
 .btn-gradient:focus {
@@ -151,7 +152,7 @@ header.stickey {
 .nav-right li { list-style: none;}
 
 .dropdown-item{
-    color: #000;
+    color: #212529!important;
     font-size: 14px;
     text-decoration: none;
 }
@@ -367,7 +368,6 @@ header.stickey {
   resize: vertical;
   resize: none;
 }
-
 
 .contact-clean form .btn {
   padding: 12px 0;
