@@ -277,7 +277,7 @@ include('header.php');
                                         </button>
                                     </div>
                             </div>
-                        </li> !
+                        </li> 
                     </ul>	
                   </div>
                 </section>

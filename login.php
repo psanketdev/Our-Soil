@@ -55,25 +55,35 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Mega Menu</a></li>
                     <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Services</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                        <div class="dropdown-menu animate slideIn mt-2" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="#"><i class="fa fa-shopping-cart" style="margin: 2px;"></i>2</a>
+                </ul>
+                <span class="navbar-text actions"> 
+                <!-- <a class="login" href="#"><i class="fa fa-shopping-cart" style="margin: 2px;"></i>2</a> -->
                 <!-- <a class="login" href="login.php">Log In</a> -->
-                <a class="btn btn-light action-button" role="button" href="register.php">Sign Up</a>
+                <a class="btn btn-light action-button py-1 fs-14 " role="button" href="register.php">Sign Up</a>
             </span></div>
         </div>
     </nav>
-    <div class="login-clean" style="margin-top: 55px; padding: 120px 0;background-color: rgb(193,218,239);">
+    <div class="login-clean" style="margin-top: 55px; padding: 130px 0;background-color: rgb(193,218,239);">
         <form method="post  clear-all">
             <h2 class="text-dark fs-20 text-center mb-3">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group mb-1">
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Email">
+                <small class="error-text  mt-1">Please enter valid details</small>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Password">
+                <small class="error-text mt-1">Please enter valid details</small>
+            </div>
+            <div class="form-group mb-2">
                 <a class="btn btn-primary btn-block" type="submit" href='index.php';">Log In</a>
             </div>
-            <a class="forgot a-color mb-1" href="#">Forgot Password?</a>
-            <a class="forgot" href="#">Don't have an account!&nbsp;Sign Up&nbsp;</a>
+            <div class="d-flex justify-content-between">
+                <p class="forgot">Don't have an account!<a href="register.php">Sign Up</a></p>
+                <a class="forgot a-color" href="#!">Forgot Password?</a>
+            </div>   
         </form>
     </div>
 

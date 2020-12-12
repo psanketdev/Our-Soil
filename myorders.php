@@ -45,13 +45,13 @@ include('header.php');
                         <table class="table table-bordered table-hover">
                             <thead class="bill-header cs">
                                 <tr>
-                                    <th id="trs-hd" class="col-lg-1" style="    width: 3px;">SL. No.</th>
-                                    <th id="trs-hd" class="col-lg-2">Order ID</th>
-                                    <th id="trs-hd" class="col-lg-3">Total Items</th>
-                                    <th id="trs-hd" class="col-lg-2">Company Name</th>
-                                    <th id="trs-hd" class="col-lg-2">Status</th>
-                                    <th id="trs-hd" class="col-lg-2">Action</th>
-                                    <th id="trs-hd" class="col-lg-2">Action</th>
+                                    <th id="trs-hd" style="width: 65px">SL. No.</th>
+                                    <th id="trs-hd">Order ID</th>
+                                    <th id="trs-hd">Total Items</th>
+                                    <th id="trs-hd">Company Name</th>
+                                    <th id="trs-hd">Status</th>
+                                    <th id="trs-hd">Action</th>
+                                    <th id="trs-hd">Action</th>
                                 </tr>
                             </thead>
                             <tbody>

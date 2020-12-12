@@ -31,14 +31,14 @@
                 id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item mr-2" role="presentation">
-                        <a class="nav-link text-white" href="#">About Us</a>
+                        <a class="nav-link text-white" href="#!">About Us</a>
                     </li>
                     <li class="nav-item mr-2" role="presentation">
-                        <a class="nav-link text-white" href="#">Contact Us</a>
+                        <a class="nav-link text-white" href="#!">Contact Us</a>
                     </li>
                     <!-- <li class="nav-item mr-3" role="presentation"></li> -->
                     <li class="nav-item dropdown megamenu mr-2">
-                        <a class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#">Mega Menu</a>
+                        <a class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#!">Mega Menu</a>
                         <div class="dropdown-menu animate slideIn" role="menu" style="background-color:#fff;">
                             <div class="container" style="padding: 30px 0">
                                 <div class="row">
@@ -72,11 +72,11 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#FIXME" class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown</a>
+                        <a href="#FIXME" class="dropdown-toggle nav-link text-white" data-toggle="dropdown" aria-expanded="false" href="#!">Dropdown</a>
                         <div class="dropdown-menu animate slideIn mt-3" role="menu">
-                            <a class="dropdown-item" role="presentation" href="#">First Item</a>
-                            <a class="dropdown-item" role="presentation" href="#">Second Item</a>
-                            <a class="dropdown-item" role="presentation" href="#">Third Item</a>
+                            <a class="dropdown-item" role="presentation" href="#!">First Item</a>
+                            <a class="dropdown-item" role="presentation" href="#!">Second Item</a>
+                            <a class="dropdown-item" role="presentation" href="#!">Third Item</a>
                         </div>
                     </li>
                 </ul>
@@ -113,6 +113,39 @@
         </div>
     </nav>
 </header>
+
+
+<div class="forMobile-icons stickey-icons py-2 w-100 b-shadow d-lg-none d-sm-block">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-3">
+                <a href="#!" class="active">
+                    <i class="fa fa-home  d-block" aria-hidden="true"></i>
+                     <span class="d-block fs-14">Home</span>
+                </a>
+            </div>
+             <div class="col-3">
+                <a href="#!">
+                    <i class="fa fa-window-restore  d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-14">Categories</span>
+                </a>
+            </div>
+             <div class="col-3">
+                <a href="#!">
+                    <i class="fa fa-cart-plus  d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-14">Cart</span>
+                </a>
+            </div>
+             <div class="col-3">
+                <a href="#!">
+                    <i class="fa fa-user  d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-14">Profile</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
        
 

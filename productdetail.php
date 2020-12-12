@@ -20,9 +20,12 @@ include('header.php');
                                     <div class="product-image" style="width: 100%;">
                                         <div class="image img-fluid" style="width: 100%;"></div>
                                     </div>
-                                    <div class="row product-thumbnails"><img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono1_.jpg"><img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono2.jpg"><img class="img-fluid img-thumbnail col-md-3" alt="&quot;"
-                                            src="assets/img/mono3.jpg"><img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono4_.jpg"><img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono4_.jpg"><img class="img-fluid img-thumbnail col-md-3"
-                                            alt="&quot;" src="assets/img/mono2.jpg"><img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono4_.jpg"></div>
+                                    <div class="row product-thumbnails">
+                                        <img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono1_.jpg">
+                                        <img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono2.jpg">
+                                        <img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono3.jpg">
+                                        <img class="img-fluid img-thumbnail col-md-3" alt="&quot;" src="assets/img/mono4_.jpg">
+                                    </div>
                                 </div>
                                 <div class="col-md-7 p-0">
                                     <div class="product-details">

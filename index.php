@@ -40,17 +40,17 @@ include('header.php');
                     <!-- <button class="btn btn-primary px-4" type="button">Register</button> -->
                 </div>
                 <div class="col-md-6">
-                    <h4 class="text-dark fs-20 mb-2 font-weight-bold">Login Here</h4>
+                    <h4 class="text-dark fs-20 mb-4 font-weight-bold">Login Here</h4>
                     <form class="" action="#">
-                        <div class="form-group mt-4">
+                        <div class="form-group">
                             <input type="text" class="form-control m-0" style="width: 100%;margin: 10px;height: 40px;"
                                 placeholder="Enter Email ID" name="email">
-                            <small class="error-text">Please enter valid details</small>
+                            <small class="error-text mt-1">Please enter valid details</small>
                         </div>
-                        <div class="form-group mt-4">
+                        <div class="form-group">
                             <input type="text" class="form-control m-0" style="width: 100%;margin: 10px;height: 40px;"
                                 placeholder="Enter Password">
-                            <small class="error-text">Please enter valid details</small>
+                            <small class="error-text mt-1">Please enter valid details</small>
                         </div>
                         <button class="btn btn-gradient btn-shadow w-50 log mt-3" type="button">Log In</button>
                     </form>
@@ -64,7 +64,7 @@ include('header.php');
     <section class="show-product">
         <div class="container">
           <div class="row">
-              <div class="col-12 col-md-3 card b-top mb-4">
+              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card b-top mb-4">
                   <h3 class="fs-20 font-weight-bold mb-3">Grocery & many more</h3>
                   <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                       <div>
@@ -91,7 +91,7 @@ include('header.php');
                   </div> 
               </div>
 
-              <div class="col-12 col-md-3 card  mb-4">
+              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card  mb-4">
                   <h3 class="fs-20  font-weight-bold">Clay Pots & Home essentials</h3>
                   <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                     <div>
@@ -118,7 +118,7 @@ include('header.php');
                   </div>                 
               </div>
 
-              <div class="col-12 col-md-3 card mb-4">
+              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card mb-4">
                   <h3 class="fs-20 font-weight-bold">Trandy cloths</h3>
                   <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                       <div>
@@ -145,7 +145,7 @@ include('header.php');
                   </div>               
               </div>
 
-              <div class="col-12 col-md-3 card mb-4">
+              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card mb-4">
                       <h3 class="fs-20 font-weight-bold">Stationery</h3>
                       <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                           <div>
@@ -172,9 +172,9 @@ include('header.php');
                       </div>
                   </div>
               </div>
-          </div>
+         
           <div class="row">
-            <div class="col-12 col-md-3 card">
+            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
                 <h3 class="fs-20 font-weight-bold">Super cool gadgets</h3>
                 <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                     <div>
@@ -201,7 +201,7 @@ include('header.php');
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 card">
+            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
                 <h3 class="fs-20 font-weight-bold">Professional tools</h3>
                 <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                     <div>
@@ -228,7 +228,7 @@ include('header.php');
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 card">
+            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
                 <h3 class="fs-20 font-weight-bold">Professional tools</h3>
                 <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                     <div>
@@ -255,7 +255,7 @@ include('header.php');
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 card">
+            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
                 <h3 class="fs-20 font-weight-bold">Professional tools</h3>
                 <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                     <div>
@@ -1015,8 +1015,14 @@ include('header.php');
                    <div class="ml-4 mb-4">
                         <h2 class="text-dark font-weight-bold text-center">Contact Us</h2>
                     </div>
-                    <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"><small class="form-text text-danger d-none">Please enter a valid details.</small></div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" placeholder="Name">
+                        <small class="error-text mt-1">Please enter valid details</small>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" placeholder="Email">
+                        <small class="error-text mt-1">Please enter a valid details.</small>
+                    </div>
                     <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
                     <div class="form-group mt-4">
                         <button class="btn btn-gradient btn-shadow w-100" type="submit">submit</button>
