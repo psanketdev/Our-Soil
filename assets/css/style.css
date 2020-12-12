@@ -814,8 +814,8 @@ header.stickey {
 }
 
 .login-clean form {
-  max-width: 320px;
-  width: 90%;
+  max-width: 400px;
+  width: 30%;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 40px;

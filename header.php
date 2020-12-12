@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.css">
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 

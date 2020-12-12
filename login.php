@@ -63,7 +63,7 @@
             </span></div>
         </div>
     </nav>
-    <div class="login-clean" style="margin-top: 70px; padding: 120px 0;background-color: rgb(193,218,239);">
+    <div class="login-clean" style="margin-top: 55px; padding: 120px 0;background-color: rgb(193,218,239);">
         <form method="post  clear-all">
             <h2 class="text-dark fs-20 text-center mb-3">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-navigate"></i></div>

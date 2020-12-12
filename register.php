@@ -64,7 +64,7 @@
         </div>
         </div>
     </nav>
-    <div class="register-photo" style="margin-top: 70px;background-color: rgb(193,218,239);">
+    <div class="register-photo" style="margin-top: 55px;  background-color: rgb(193,218,239);">
         <div class="form-container" style="max-width: 400px;">
             <form method="post">
                 <h2 class="text-dark fs-20 text-center mb-3"><strong>Create</strong> an account.</h2>
