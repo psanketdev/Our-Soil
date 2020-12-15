@@ -2,7 +2,7 @@
 include('header.php');
 
 ?>
-    <ol class="breadcrumb" style="margin-top: 70px;">
+    <ol class="breadcrumb" style="margin-top: 60px;">
         <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
         <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
         <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
@@ -23,7 +23,7 @@ include('header.php');
                     <div id="collapseOne" class="collapse show item-1" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             <div>
-                                <h3>The total amount of<br></h3>
+                                <h3 class="mb-3">The Total amount of</h3>
                                 <div class="table-responsive">
                                     <table class="table table-hover">
                                         <thead>
@@ -82,17 +82,21 @@ include('header.php');
                                         <div class="form-group col-md-6">
                                             <label>First Name</label>
                                             <input class="form-control" type="text">
-                                            <small class="text-danger d-none">Plese enter a valid details</small>
+                                            <small class="error-text">Please enter a valid details</small>
                                         </div>
-                                        <div class="form-group col-md-6"><label>Last Name</label><input class="form-control" type="text"><small class="text-danger d-none">Plese enter a valid details</small></div>
+                                        <div class="form-group col-md-6"><label>Last Name</label><input class="form-control" type="text"><small class="error-text">Please enter a valid details</small></div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-6">
                                         <label>Email ID</label>
-                                        <input class="form-control" type="text">
-                                        <small class="text-danger d-none">Plese enter a valid details</small>
+                                        <input class="form-control" type="email">
+                                        <small class="error-text">Please enter a valid details</small>
                                         </div>
-                                        <div class="form-group col-md-6"><label>Contact No.</label><input class="form-control" type="text"><small class="text-danger d-none">Plese enter a valid details</small></div>
+                                        <div class="form-group col-md-6">
+                                            <label>Contact No.</label>
+                                            <input class="form-control" type="number">
+                                            <small class="error-text">Please enter a valid details</small>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-12"><label>Address Line 1</label><input class="form-control" type="text"></div>
@@ -101,9 +105,9 @@ include('header.php');
                                         <div class="form-group col-md-12"><label>Address Line 2</label><input class="form-control" type="text"></div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-md-4"><label>Pin Code</label><input class="form-control" type="text"><small class="text-danger d-none">Plese enter a valid details</small></div>
-                                        <div class="form-group col-md-4"><label>State</label><input class="form-control" type="text"><small class="text-danger d-none">Plese enter a valid details</small></div>
-                                        <div class="form-group col-md-4"><label>City</label><input class="form-control" type="text"><small class="text-danger d-none">Plese enter a valid details</small></div>
+                                        <div class="form-group col-md-4"><label>Pin Code</label><input class="form-control" type="number"><small class="error-text">Please enter a valid details</small></div>
+                                        <div class="form-group col-md-4"><label>State</label><input class="form-control" type="text"><small class="error-text">Please enter a valid details</small></div>
+                                        <div class="form-group col-md-4"><label>City</label><input class="form-control" type="text"><small class="error-text">Please enter a valid details</small></div>
                                     </div>
                                 </form>
                             </div>

@@ -2,8 +2,7 @@
 include('header.php');
 
 ?>
-    </div>
-    <div data-bs-parallax-bg="true" style="background-image: url(&quot;assets/img/clay%20pot%20import.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;"></div>
+
     <section class="new-products">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>

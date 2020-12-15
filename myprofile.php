@@ -2,7 +2,7 @@
     include('header.php');
 ?>
 
-<div class="container">
+<div>
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">

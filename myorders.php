@@ -1,7 +1,7 @@
 <?php 
 include('header.php');
 ?>
-    <div style="background-image: url(&quot;assets/img/order-banner.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;background-repeat: no-repeat;"></div>
+    <!-- <div style="background-image: url(&quot;assets/img/order-banner.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;background-repeat: no-repeat;"></div> -->
     <section>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>

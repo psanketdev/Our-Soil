@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <nav class="navbar py-2 navbar-light navbar-expand-md fixed-top border-primary d-sm-block navigation-clean-button" style="background-color: rgb(255,255,255); box-shadow: 3px 0 20px rgba(0,0,0,.8);transition: all .5s ease-in-out">
+    <nav class="navbar py-2 navbar-light navbar-expand-md fixed-top border-primary d-sm-block navigation-clean-button" style="background-color: rgb(255,255,255); box-shadow: 3px 0 10px rgba(0,0,0,.8);transition: all .5s ease-in-out">
         <div class="container"><a class="navbar-brand" href="#">E-Local</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">

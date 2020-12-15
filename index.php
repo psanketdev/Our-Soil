@@ -18,12 +18,16 @@ include('header.php');
                 <img class="w-100 d-block" src="assets/img/background/bg7.jpg" alt="Slide Image">
             </div>
         </div>
-        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only">Previous</span></a>
+        <div>
+            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
             <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon">                   
-                </span><span class="sr-only">Next</span></a></div>
+                </span><span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
 <!-- Banner end-->
@@ -31,24 +35,24 @@ include('header.php');
  <!-- register today section start -->
     <section class="register py-5">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 mb-4">
                     <h2 class="display-4 text-gray font-weight-light" data-aos="fade">
                         <i class="fa fa-user-plus mr-2" style="color: #081c15;"></i>Register Today</h2>
                     <p class="text-dark">This will help you to get Shop and Service provider near
                         you</p>
                     <!-- <button class="btn btn-primary px-4" type="button">Register</button> -->
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <h4 class="text-dark fs-20 mb-4 font-weight-bold">Login Here</h4>
                     <form class="" action="#">
                         <div class="form-group">
-                            <input type="text" class="form-control m-0" style="width: 100%;margin: 10px;height: 40px;"
+                            <input type="text" class="form-control m-0" style="width: 100%;height: 40px;"
                                 placeholder="Enter Email ID" name="email">
                             <small class="error-text mt-1">Please enter valid details</small>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control m-0" style="width: 100%;margin: 10px;height: 40px;"
+                            <input type="text" class="form-control m-0" style="width: 100%;height: 40px;"
                                 placeholder="Enter Password">
                             <small class="error-text mt-1">Please enter valid details</small>
                         </div>
@@ -64,221 +68,222 @@ include('header.php');
     <section class="show-product">
         <div class="container">
           <div class="row">
-              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card b-top mb-4">
-                  <h3 class="fs-20 font-weight-bold mb-3">Grocery & many more</h3>
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                      <div>
-                          <img class="img-fluid img-thumbnail" alt="" src="assets/img/logo-for-grocery-store-vector-21609822.jpg">
-                          <h5>Heading</h5>
-                      </div>
-                      <div>
-                          <img class="img-fluid img-thumbnail"  src="assets/img/logo-for-grocery-store-vector-22845012.jpg" alt="img">
-                          <h5>Heading</h5>
-                      </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                      <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/preview_d4c97a66f5f11de5ac4979468b8c7cf6.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                  </div>
-                  <div>
-                    <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                  </div> 
-              </div>
-
-              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card  mb-4">
-                  <h3 class="fs-20  font-weight-bold">Clay Pots & Home essentials</h3>
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail"   src="assets/img/Cookware.jpg" alt="img">
-                      <h5>Electicians</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/Naturally%20Non%20Stick.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                      <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/Tableware%20And%20Dinner%20Set.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/Chaffing%20Dishesh.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                  </div>
-                  <div>
-                      <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                  </div>                 
-              </div>
-
-              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card mb-4">
-                  <h3 class="fs-20 font-weight-bold">Trandy cloths</h3>
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                      <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                      <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                  </div>
-                  <div>
-                    <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                  </div>               
-              </div>
-
-              <div class="col-12 col-md-12 col-lg-3 col-xl-3 card mb-4">
-                      <h3 class="fs-20 font-weight-bold">Stationery</h3>
-                      <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                          <div>
-                          <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                          <h5>Heading</h5>
+           	   <div class="col-12 col-md-12 col-lg-3 card b-top mb-4">
+                    <h3 class="fs-20 font-weight-bold mb-3">Grocery & many more</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                            <img class="img-fluid img-thumbnail" alt="" src="assets/img/logo-for-grocery-store-vector-21609822.jpg">
+                            <h5>Heading</h5>
                         </div>
                         <div>
-                          <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                          <h5>Heading</h5>
+                            <img class="img-fluid img-thumbnail"  src="assets/img/logo-for-grocery-store-vector-22845012.jpg" alt="img">
+                            <h5>Heading</h5>
                         </div>
-                      </div>
-                      <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
-                          <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                          <h5>Heading</h5>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
                         </div>
                         <div>
-                          <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                          <h5>Heading</h5>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/preview_d4c97a66f5f11de5ac4979468b8c7cf6.jpg" alt="img">
+                        <h5>Heading</h5>
                         </div>
-                      </div>
-                      <div>
-                          <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                      </div>
-                  </div>
-              </div>
-         
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
-                <h3 class="fs-20 font-weight-bold">Super cool gadgets</h3>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                    <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                    <h5>Heading</h5>
                     </div>
                     <div>
-                    <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                    <h5>Heading</h5>
-                    </div>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                    </div> 
                 </div>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                </div>
-                <div>
-                    <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                </div>
-            </div>
 
-            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
-                <h3 class="fs-20 font-weight-bold">Professional tools</h3>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
+                <div class="col-12 col-md-12 col-lg-3 card  mb-4">
+                    <h3 class="fs-20  font-weight-bold">Clay Pots & Home essentials</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"   src="assets/img/Cookware.jpg" alt="img">
+                        <h5>Electicians</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/Naturally%20Non%20Stick.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/Tableware%20And%20Dinner%20Set.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/Chaffing%20Dishesh.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
                     </div>
                     <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                    </div>                 
                 </div>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                </div>
-                <div>
-                    <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                </div>
-            </div>
 
-            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
-                <h3 class="fs-20 font-weight-bold">Professional tools</h3>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
+                <div class="col-12 col-md-12 col-lg-3 card mb-4">
+                    <h3 class="fs-20 font-weight-bold">Trandy cloths</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
                     </div>
                     <div>
-                      <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                    </div>               
                 </div>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                    <div>
-                      <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
-                    </div>
-                </div>
-                <div>
-                    <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                </div>
-            </div>
 
-            <div class="col-12 col-md-12 col-lg-3 col-xl-3 card">
-                <h3 class="fs-20 font-weight-bold">Professional tools</h3>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
+                <div class="col-12 col-md-12 col-lg-3  card mb-4">
+                        <h3 class="fs-20 font-weight-bold">Stationery</h3>
+                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                            <div>
+                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
+                            </div>
+                            <div>
+                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                            <div>
+                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
+                            </div>
+                            <div>
+                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                        </div>
+                </div>    
+           </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-3  card">
+                    <h3 class="fs-20 font-weight-bold">Super cool gadgets</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
                     </div>
                     <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
                     </div>
                 </div>
-                <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                    <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
+
+                <div class="col-12 col-md-12 col-lg-3  card">
+                    <h3 class="fs-20 font-weight-bold">Professional tools</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
                     </div>
                     <div>
-                      <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                      <h5>Heading</h5>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
                     </div>
                 </div>
-                <div>
-                    <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+
+                <div class="col-12 col-md-12 col-lg-3  card">
+                    <h3 class="fs-20 font-weight-bold">Professional tools</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 card">
+                    <h3 class="fs-20 font-weight-bold">Professional tools</h3>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <h5>Heading</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -549,225 +554,117 @@ include('header.php');
        <!-- show product section start -->
     <section class="show-product">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-3 col-xl-3 card b-top mb-4">
+             <div class="row">
+               <div class="col-12 col-md-12 col-lg-3 card b-top mb-4">
                     <h3 class="fs-20 font-weight-bold mb-3">Grocery & many more</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/logo-for-grocery-store-vector-21609822.jpg"  alt="img">
+                            <img class="img-fluid img-thumbnail" alt="" src="assets/img/logo-for-grocery-store-vector-21609822.jpg">
                             <h5>Heading</h5>
                         </div>
                         <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/logo-for-grocery-store-vector-22845012.jpg" alt="img">
+                            <img class="img-fluid img-thumbnail"  src="assets/img/logo-for-grocery-store-vector-22845012.jpg" alt="img">
                             <h5>Heading</h5>
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                       <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
-                      <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/preview_d4c97a66f5f11de5ac4979468b8c7cf6.jpg" alt="img">
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/preview_d4c97a66f5f11de5ac4979468b8c7cf6.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
+                        </div>
                     </div>
                     <div>
-                      <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
                     </div> 
                 </div>
 
-                <div class="col-12 col-md-12 col-lg-3 col-xl-3 card  mb-4">
+                <div class="col-12 col-md-12 col-lg-3 card  mb-4">
                     <h3 class="fs-20  font-weight-bold">Clay Pots & Home essentials</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                      <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/Cookware.jpg" alt="img">
+                        <div>
+                        <img class="img-fluid img-thumbnail"   src="assets/img/Cookware.jpg" alt="img">
                         <h5>Electicians</h5>
-                      </div>
-                      <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/Naturally%20Non%20Stick.jpg" alt="img">
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/Naturally%20Non%20Stick.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
+                        </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                       <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/Tableware%20And%20Dinner%20Set.jpg" alt="img">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/Tableware%20And%20Dinner%20Set.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
-                      <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/Chaffing%20Dishesh.jpg" alt="img">
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/Chaffing%20Dishesh.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
+                        </div>
                     </div>
                     <div>
-                       <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
                     </div>                 
                 </div>
 
-                <div class="col-12 col-md-12 col-lg-3 col-xl-3 card mb-4">
+                <div class="col-12 col-md-12 col-lg-3 card mb-4">
                     <h3 class="fs-20 font-weight-bold">Trandy cloths</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                       <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
-                      <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
+                        </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                       <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
-                      <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                        </div>
+                        <div>
+                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                         <h5>Heading</h5>
-                      </div>
+                        </div>
                     </div>
                     <div>
-                      <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
+                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
                     </div>               
                 </div>
-               
-                <div class="col-12 col-md-12 col-lg-3 col-xl-3 card mb-4">
+
+                <div class="col-12 col-md-12 col-lg-3  card mb-4">
                         <h3 class="fs-20 font-weight-bold">Stationery</h3>
                         <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
+                            <div>
                             <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                             <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail  img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                          <div>
+                            </div>
+                            <div>
                             <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                             <h5>Heading</h5>
-                          </div>
-                          <div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                            <div>
                             <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
                             <h5>Heading</h5>
-                          </div>
+                            </div>
+                            <div>
+                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
+                            </div>
                         </div>
                         <div>
                             <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-                <!-- <div class="row">
-                    <div class="col-12 col-md-3 card">
-                        <h3 class="fs-20 font-weight-bold">Super cool gadgets</h3>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div>
-                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                        </div>
-                    </div>
+                </div>    
+           </div>
 
-                    <div class="col-12 col-md-3 card">
-                        <h3 class="fs-20 font-weight-bold">Professional tools</h3>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div>
-                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                        </div>
-                    </div>
-
-                   <div class="col-12 col-md-3  card">
-                        <h3 class="fs-20 font-weight-bold">Professional tools</h3>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div>
-                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                        </div>
-                    </div>
-
-                     <div class="col-12 col-md-3 card">
-                        <h3 class="fs-20 font-weight-bold">Professional tools</h3>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                           <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                          <div>
-                            <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                          </div>
-                        </div>
-                        <div>
-                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                        </div>
-                    </div>
-                </div> -->
+        </div>
     </section>
     <!-- show product section end -->
 
@@ -780,7 +677,6 @@ include('header.php');
             </div>
             <hr>
             <ul class="card-group product-slider-2-items">  
-
                 <li>
                     <div class="card">
                         <figure>

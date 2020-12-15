@@ -2,7 +2,7 @@
 include('header.php');
 
 ?>
-    <ol class="breadcrumb" style="margin-top: 70px;">
+    <ol class="breadcrumb" style="margin-top: 60px;">
         <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
         <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
         <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
@@ -34,7 +34,7 @@ include('header.php');
                         <div class="d-flex flex-column align-items-end">
                             <div>
                                 <span class="fs-16 text-info">Quantity</span>
-                                <input class="border rounded" type="text" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
+                                <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
                             <div class="pt-5">
                                 <span class="fs-20 text-gray font-weight-bold">$121</span>
@@ -70,7 +70,7 @@ include('header.php');
                         <div class="d-flex flex-column align-items-end">
                             <div>
                                 <span class="fs-16 text-info">Quantity</span>
-                                <input class="border rounded" type="text" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
+                                <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
                             <div class="pt-5">
                                 <span class="fs-20 text-gray font-weight-bold">$121</span>
@@ -106,7 +106,7 @@ include('header.php');
                         <div class="d-flex flex-column align-items-end">
                             <div>
                                 <span class="fs-16 text-info">Quantity</span>
-                                <input class="border rounded" type="text" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
+                                <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
                             <div class="pt-5">
                                 <span class="fs-20 text-gray font-weight-bold">$121</span>
