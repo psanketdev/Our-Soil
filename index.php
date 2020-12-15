@@ -96,25 +96,25 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3 card  mb-4">
-                    <h3 class="fs-20  font-weight-bold">Clay Pots & Home essentials</h3>
+                    <h3 class="fs-20  font-weight-bold mb-3">Clay Pots & Home essentials</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
-                        <img class="img-fluid img-thumbnail"   src="assets/img/Cookware.jpg" alt="img">
-                        <h5>Electicians</h5>
+                            <img class="img-fluid img-thumbnail"   src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Electicians</h5>
                         </div>
                         <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/Naturally%20Non%20Stick.jpg" alt="img">
-                        <h5>Heading</h5>
+                            <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/Tableware%20And%20Dinner%20Set.jpg" alt="img">
-                        <h5>Heading</h5>
+                            <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
                         </div>
                         <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/Chaffing%20Dishesh.jpg" alt="img">
-                        <h5>Heading</h5>
+                            <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
+                            <h5>Heading</h5>
                         </div>
                     </div>
                     <div>
@@ -123,7 +123,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3 card mb-4">
-                    <h3 class="fs-20 font-weight-bold">Trandy cloths</h3>
+                    <h3 class="fs-20 font-weight-bold mb-3">Trandy cloths</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -150,7 +150,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3  card mb-4">
-                        <h3 class="fs-20 font-weight-bold">Stationery</h3>
+                        <h3 class="fs-20 font-weight-bold mb-3">Stationery</h3>
                         <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                             <div>
                             <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -179,7 +179,7 @@ include('header.php');
 
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-3  card">
-                    <h3 class="fs-20 font-weight-bold">Super cool gadgets</h3>
+                    <h3 class="fs-20 font-weight-bold mb-3">Super cool gadgets</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -206,7 +206,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3  card">
-                    <h3 class="fs-20 font-weight-bold">Professional tools</h3>
+                    <h3 class="fs-20 font-weight-bold mb-3">Professional tools</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -233,7 +233,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3  card">
-                    <h3 class="fs-20 font-weight-bold">Professional tools</h3>
+                    <h3 class="fs-20 font-weight-bold mb-3">Professional tools</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -260,7 +260,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3 card">
-                    <h3 class="fs-20 font-weight-bold">Professional tools</h3>
+                    <h3 class="fs-20 font-weight-bold mb-3">Professional tools</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -330,14 +330,14 @@ include('header.php');
                 <a href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
-            <ul class="card-group product-slider-1-items">  
+            <ul class="card-group product-slider-1-items py-3">  
                 <li>
                   <div class="card">
                       <figure>
                           <img class="img-fluid" alt="" src="assets/img/products/bottels.jpg">
                       </figure>
                       <div class="card-body">
-                        <div class="d-flex mb-3">
+                        <div class="d-flex mb-2">
                             <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                             <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                             <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -364,7 +364,7 @@ include('header.php');
                       </figure>
                 
                       <div class="card-body">
-                          <div class="d-flex mb-3">
+                          <div class="d-flex mb-2">
                               <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                               <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                               <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -391,7 +391,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body shadow">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -418,7 +418,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -445,7 +445,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex  mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -472,7 +472,7 @@ include('header.php');
                         </figure>
                        
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -499,7 +499,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -526,7 +526,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -583,7 +583,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3 card  mb-4">
-                    <h3 class="fs-20  font-weight-bold">Clay Pots & Home essentials</h3>
+                    <h3 class="fs-20  font-weight-bold mb-3">Clay Pots & Home essentials</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail"   src="assets/img/Cookware.jpg" alt="img">
@@ -610,7 +610,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3 card mb-4">
-                    <h3 class="fs-20 font-weight-bold">Trandy cloths</h3>
+                    <h3 class="fs-20 font-weight-bold mb-3">Trandy cloths</h3>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                         <div>
                         <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -637,7 +637,7 @@ include('header.php');
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-3  card mb-4">
-                        <h3 class="fs-20 font-weight-bold">Stationery</h3>
+                        <h3 class="fs-20 font-weight-bold mb-3">Stationery</h3>
                         <div class="d-flex align-items-center justify-content-between w-100 mb-4">
                             <div>
                             <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
@@ -676,7 +676,7 @@ include('header.php');
                 <a  href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
-            <ul class="card-group product-slider-2-items">  
+            <ul class="card-group product-slider-2-items py-3">  
                 <li>
                     <div class="card">
                         <figure>
@@ -684,7 +684,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -712,7 +712,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -740,7 +740,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -768,7 +768,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -796,7 +796,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body shadow">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -824,7 +824,7 @@ include('header.php');
                         </figure>
                         
                         <div class="card-body">
-                            <div class="d-flex mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -851,7 +851,7 @@ include('header.php');
                             <img class="img-fluid" alt="" src="assets/img/products/tradional-deco.jpg">
                         </figure>
                         <div class="card-body">
-                            <div class="d-flex  mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -878,7 +878,7 @@ include('header.php');
                             <img class="img-fluid" alt="" src="assets/img/products/cup%20sets.jpg">
                         </figure>
                         <div class="card-body">
-                            <div class="d-flex  mb-3">
+                            <div class="d-flex mb-2">
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
                                 <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
@@ -936,15 +936,15 @@ include('header.php');
                 <h2 class="text-dark font-weight-bold text-center fs-20">Band Of Trust</h2>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-md-4 col-lg-4">
+                <div class="col-md-4 col-lg-4 mb-3">
                     <i class="fa fa-heart text-danger" aria-hidden="true"></i>
                     <span class="d-block">Great Selection</span>
                 </div>
-                <div class="col-md-4 col-lg-4 middle">
+                <div class="col-md-4 col-lg-4 middle mb-3">
                     <i class="fa fa-inr text-success" aria-hidden="true"></i>
                     <span class="d-block">Low Price</span>
                 </div>
-                <div class="col-md-4 col-lg-4">
+                <div class="col-md-4 col-lg-4 mb-3">
                     <i class="fa fa-shopping-cart text-warning" aria-hidden="true"></i>
                     <span class="d-block">Speedy Delivery</span>
                 </div>

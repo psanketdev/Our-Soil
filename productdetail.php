@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 include('header.php');
 
 ?>
@@ -88,7 +88,7 @@ include('header.php');
                 <a href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
-            <ul class="card-group product-slider-1-items">  
+            <ul class="card-group product-slider-1-items py-3">  
                 <li>
                     <div class="card">
                         <figure>

@@ -3,7 +3,7 @@
 			<div class="container">
 				<div class="mb-5">
 					<div class="row">
-						<div class="col-12 col-md-3 mb-3">
+						<div class="col-6 col-md-3 mb-4">
 							<h3 class="mb-2">Services</h3>
 							<ul class="d-flex flex-column">
 								<li><a href="#">Web design</a></li>
@@ -11,7 +11,7 @@
 								<li><a href="#">Hosting</a></li>
 							</ul>
 						</div>
-						<div class="col-12 col-md-3 mb-3">
+						<div class="col-6 col-md-3 mb-4">
 							<h3 class="mb-2">About</h3>
 							<ul class="d-flex flex-column">
 								<li><a href="#">Company</a></li>
@@ -19,7 +19,7 @@
 								<li><a href="#">Careers</a></li>
 							</ul>
 						</div>
-						<div class="col-12 col-md-6 mb-3">
+						<div class="col-12 col-md-6 mb-4">
 							<h3 class="mb-2">Company Name</h3>
 							<p class="font-weight-light">Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
 						</div>
