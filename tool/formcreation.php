@@ -32,6 +32,9 @@ while ($tables = mysqli_fetch_array($data))
 
 }
 
+echo "formfieldprepare(". "$" . "Users[UserCategory], ". "$" ."tablename, 'UserCategory', 'UserCategory', 'UserCategory', 'select', '');";
+
+
 $result9 = "DESCRIBE `".$tablename."`";
   $j = 0;
 $data9 = mysqli_query($DBcon,$result9);
@@ -48,6 +51,7 @@ while($row9 = mysqli_fetch_array($data9))
 }
 ?>
 <br><br>
+
 <textarea class="form-control"  width="100%" rows="30"  height ="500px">
 <?php
 echo '<form method = "post" action = "edit_php.php">

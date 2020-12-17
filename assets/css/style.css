@@ -11,6 +11,7 @@ body {font-family: 'Poppins', sans-serif; }
 a {text-decoration: none; font-size: 14px; font-weight: 300; transition: all 0.5s linear;}
 li {list-style: none; display: inline-block;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {margin-bottom: 0;}
+h2{font-size: 1.5rem;}
 .fs-10 {font-size: 10px;}
 .fs-14 {font-size: 14px!important;}
 .fs-16 {font-size: 16px;}
@@ -159,7 +160,6 @@ header.stickey {
 }
 
 
-
 /* slider */
 .carousel img{
   width: 100%; 
@@ -189,12 +189,17 @@ header.stickey {
 
 .show-product .card {
   width: 300px;
+  min-width: 0;
   height: 100%;
   min-height: 460px;
   padding: 20px;
+  flex-direction: unset;
+  flex-wrap: wrap;
   background: #fff;
   border-top: 2px solid #e8bf31!important;
   height: 100%;
+  position: relative;
+  overflow: hidden;
   margin-right: 15px;
   box-sizing: border-box;
   box-shadow: 3px 3px 20px rgba(0,0,0,0.1)!important;
@@ -224,8 +229,8 @@ header.stickey {
   box-shadow: 1px 0 3px rgba(0,0,0,0.3);
 }
 
-.product-info h2, .product-slider-1 h2 { font-size: 27px;}
-.product-info h4 {  font-size: 22px; font-weight: 600;}
+
+.product-info h4 {  font-size: 20px; font-weight: 300;}
 
 
 
@@ -306,7 +311,9 @@ header.stickey {
 
 /* new products page */
 .new-products .new-products-cards ul { flex-wrap: wrap;}
-.new-products .new-products-cards ul li { width: 30%; margin: 0 31px 20px 0;}
+.new-products .new-products-cards ul li {     width: 30%;
+    margin: 0 31px 20px 0;} /*changed by onkar*/
+/*.new-products .new-products-cards ul li { width: 30%; margin: 0 31px 20px 0;}*/
 .new-products .new-products-cards ul li h4{ font-size: 15px;}
 
 /* contact form clean */
@@ -444,6 +451,11 @@ header.stickey {
 }
 
 
+.filter-search{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 /* large dropdownmenu */
 
@@ -566,6 +578,30 @@ header.stickey {
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}
 
 /* login form */
 
@@ -575,14 +611,14 @@ header.stickey {
 }
 
 .login-clean form {
-  max-width: 380px;
-  width: 90%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 4px;
-  color: #505e6c;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    max-width: 380px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 }
 
 .login-clean .illustration {
@@ -593,15 +629,15 @@ header.stickey {
 }
 
 .login-clean form .form-control {
-  border: none;
-  border-bottom: 1px solid #dfe7f1;
-  border-radius: 0;
-  box-shadow: none;
-  outline: none;
-  color: inherit;
-  text-indent: 8px;
-  height: 42px;
-}
+border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 8px;
+    height: 42px;
+  }
 
 .login-clean form .btn-primary {
   background: #f4476b;
@@ -623,12 +659,12 @@ header.stickey {
 }
 
 .login-clean form .forgot {
-  display: block;
-  text-align: center;
-  font-size: 11px;
-  color: #6f7a85;
-  opacity: 0.9;
-  text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
 }
 
 .login-clean form .forgot:hover, .login-clean form .forgot:active {
@@ -777,21 +813,22 @@ header.stickey {
 }
 
 .navigation-clean-button .navbar-text .action-button, .navigation-clean-button .navbar-text .action-button:active, .navigation-clean-button .navbar-text .action-button:hover {
-  background: #f39c12;
-  border-radius: 20px;
-  font-size: inherit;
-  color: #fff;
-  box-shadow: none;
-  border: 1px solid;
-  text-shadow: none;
-  padding: 1.5rem 1rem;
-  transition: background-color 0.25s;
-  font-size: inherit;
-  transition: all .5s linear;
+background: #f39c12;
+    border-radius: 20px;
+    font-size: inherit;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid;
+    text-shadow: none;
+    padding: 1.5rem 1rem;
+    transition: background-color 0.25s;
+    font-size: inherit;
+    transition: all .5s linear;
+}
 }
 
 .navigation-clean-button .navbar-text .action-button:hover {
-  background: #e48c00;
+  background: #66d7d7;
 }
 
 /* navigation search */
@@ -1759,7 +1796,17 @@ html .ls-container, body .ls-container, #ls-global .ls-container {
   text-align: justify !important;
 }
 
+@media screen and (max-width: 767px) {
+  .ls-container .ls-layers > .ls-hide-on-phone, .ls-container .ls-background-videos .ls-hide-on-phone video, .ls-container .ls-background-videos .ls-hide-on-phone audio, .ls-container .ls-background-videos .ls-hide-on-phone iframe {
+    display: none !important;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ls-container .ls-layers > .ls-hide-on-tablet, .ls-container .ls-background-videos .ls-hide-on-tablet video, .ls-container .ls-background-videos .ls-hide-on-tablet audio, .ls-container .ls-background-videos .ls-hide-on-tablet iframe {
+    display: none !important;
+  }
+}
 
 .ls-container .ls-background-videos .ls-vpcontainer {
   z-index: 10;
@@ -1844,7 +1891,7 @@ html .ls-container, body .ls-container, #ls-global .ls-container {
   border-radius: 4px;
   padding: 11px;
   box-shadow: none;
-  margin-top: 15px;
+  margin-top: 35px;
   text-shadow: none;
   outline: none !important;
 }
@@ -1859,7 +1906,7 @@ html .ls-container, body .ls-container, #ls-global .ls-container {
 
 .register-photo form .already {
   display: block;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   color: #6f7a85;
   opacity: 0.9;
@@ -2271,6 +2318,7 @@ footer .copyright {
   margin-bottom: 0;
 }
 
+
 .stickey-icons {
   position: fixed;
   z-index: 555;
@@ -2283,6 +2331,8 @@ footer .copyright {
 .stickey-icons a.active, .stickey-icons a:active, .stickey-icons a:hover {color: #d63031;}
 
 /* media query */
+
+* media query */
 
 @media screen and (min-width: 1025px) {
   .ls-container .ls-layers > .ls-hide-on-desktop, .ls-container .ls-background-videos .ls-hide-on-desktop video, .ls-container .ls-background-videos .ls-hide-on-desktop audio, .ls-container .ls-background-videos .ls-hide-on-desktop iframe {
@@ -2383,6 +2433,5 @@ footer .copyright {
     .dropdown-menu-large .dropdown-header {
     padding: 3px 15px !important;
   }
-}
-
+} 
 

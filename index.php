@@ -1,6 +1,7 @@
 
 <?php 
 include('header.php');
+include('config.php');
 ?>
 
 <main>
@@ -18,18 +19,13 @@ include('header.php');
                 <img class="w-100 d-block" src="assets/img/background/bg7.jpg" alt="Slide Image">
             </div>
         </div>
-        <div>
-            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="sr-only">Previous</span>
-            </a>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span></a>
             <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon">                   
-                </span><span class="sr-only">Next</span>
-            </a>
-        </div>
+                </span><span class="sr-only">Next</span></a></div>
     </div>
-
 <!-- Banner end-->
 
  <!-- register today section start -->
@@ -44,7 +40,7 @@ include('header.php');
                     <!-- <button class="btn btn-primary px-4" type="button">Register</button> -->
                 </div>
                 <div class="col-md-12 col-lg-6">
-                    <h4 class="text-dark fs-20 mb-4 font-weight-bold">Login Here</h4>
+                    <h4 class="text-dark fs-20 mb-4 font-weight-normal">Login Here</h4>
                     <form class="" action="#">
                         <div class="form-group">
                             <input type="text" class="form-control m-0" style="width: 100%;height: 40px;"
@@ -68,256 +64,119 @@ include('header.php');
     <section class="show-product">
         <div class="container">
           <div class="row">
-           	   <div class="col-12 col-md-12 col-lg-3 card b-top mb-4">
-                    <h3 class="fs-20 font-weight-bold mb-3">Grocery & many more</h3>
+                <?php
+                    $result = "SELECT * FROM `Category` WHERE `ParentCategory` = ''";
+                    $data = mysqli_query($DBcon,$result);
+                    //$sr = 1;
+                    
+                    $rowcount=mysqli_num_rows($data);
+                    if($rowcount>3)
+                    {
+                    while($rootcategory = mysqli_fetch_array($data))
+                    {
+                ?>
+              
+              <div class="col-12 col-md-12 col-lg-3 card b-top mb-4">
+                    <h3 class="fs-20 font-weight-bold mb-3"><?php echo $rootcategory['CategoryName']; ?></h3>
+                    <?php
+                    $ParentCategory = $rootcategory['CategoryName'];
+                    $result = "SELECT * FROM `Category` WHERE `ParentCategory` = '$ParentCategory' LIMIT 4";
+                    $data = mysqli_query($DBcon,$result);
+                    $sr = 1;
+                    while($category = mysqli_fetch_array($data))
+                    {
+                        if($sr==1 || $sr==3)
+                        {
+                    ?>
                     <div class="d-flex align-items-center justify-content-between w-100 mb-4">
+                        <?php
+                        }
+                        ?>
                         <div>
-                            <img class="img-fluid img-thumbnail" alt="" src="assets/img/logo-for-grocery-store-vector-21609822.jpg">
-                            <h5>Heading</h5>
+                            <img class="img-fluid img-thumbnail" alt="" src="<?php echo $category['Thumbnail']; ?>">
+                            <a href="products.php"><h5><?php echo $category['CategoryName']; ?></h5></a>
                         </div>
-                        <div>
-                            <img class="img-fluid img-thumbnail"  src="assets/img/logo-for-grocery-store-vector-22845012.jpg" alt="img">
-                            <h5>Heading</h5>
-                        </div>
+                         <?php
+                                  if($sr==2 || $sr==4)
+                        {
+                        ?>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/preview_d4c97a66f5f11de5ac4979468b8c7cf6.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div> 
+                               </div>
+                        <?php
+                        }
+                        ?>
+                        
+                    <?php
+                    $sr = $sr + 1;
+                    }
+                        
+                   ?>
+                  
+                  <div>
+                    <a href="#FIXME" class="fs-14 a-color">See all category</a>
+                  </div> 
+              </div>
+              
+              <?php
+                    }
+                    }
+              ?>
+
                 </div>
 
-                <div class="col-12 col-md-12 col-lg-3 card  mb-4">
-                    <h3 class="fs-20  font-weight-bold mb-3">Clay Pots & Home essentials</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                            <img class="img-fluid img-thumbnail"   src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Electicians</h5>
-                        </div>
-                        <div>
-                            <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                            <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                        </div>
-                        <div>
-                            <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>                 
-                </div>
 
-                <div class="col-12 col-md-12 col-lg-3 card mb-4">
-                    <h3 class="fs-20 font-weight-bold mb-3">Trandy cloths</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>               
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3  card mb-4">
-                        <h3 class="fs-20 font-weight-bold mb-3">Stationery</h3>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                        </div>
-                </div>    
-           </div>
-
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-3  card">
-                    <h3 class="fs-20 font-weight-bold mb-3">Super cool gadgets</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3  card">
-                    <h3 class="fs-20 font-weight-bold mb-3">Professional tools</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3  card">
-                    <h3 class="fs-20 font-weight-bold mb-3">Professional tools</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3 card">
-                    <h3 class="fs-20 font-weight-bold mb-3">Professional tools</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>
-                </div>
             </div>
-        </div>
+          </div>
     </section>
     <!-- show product section end -->
 
     <!-- show producy info start -->
     <section class="product-info">
         <div class="container">
+             <?php
+                    $result = "SELECT * FROM `Category` WHERE `ParentCategory` = '' LIMIT 3";
+                    $data = mysqli_query($DBcon,$result);
+                    //$sr = 1;
+                    while($rootcategory = mysqli_fetch_array($data))
+                    {
+                ?>
+            
             <div class="ml-4">
-                <h2 class="text-dark font-weight-bold">Handmade Clay Pots</h2>
+                <h2 class="text-dark font-weight-normal"><?php echo $rootcategory['CategoryName']; ?></h2>
             </div>
+            
+            
             <div class="row">
+                <?php
+                    $ParentCategory = $rootcategory['CategoryName'];
+                    $result = "SELECT * FROM `Category` WHERE `ParentCategory` = '$ParentCategory' LIMIT 4";
+                    $data = mysqli_query($DBcon,$result);
+                    $sr = 1;
+                    while($category = mysqli_fetch_array($data))
+                    {
+                    ?>
+                
                 <div class="col-md-3">
-                    <img class="img-fluid" alt="" src="assets/img/Cookware.jpg">
-                    <h4 class="text-center bg-light py-2">Cook Ware</h4>
+                    <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><img class="img-fluid" alt="" src="<?php echo $category['Thumbnail']; ?>"></a>
+                    <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><h4 class="text-center text-light-gray mt-2 py-2"><?php echo $category['CategoryName']; ?></h4></a>
                 </div>
-                <div class="col-md-3">
-                  <img class="img-fluid" alt="" src="assets/img/Naturally%20Non%20Stick.jpg">
-                  <h4 class="text-center bg-light py-2">Natuarlly Non Stick</h4>
-                </div>
-                <div class="col-md-3">
-                  <img class="img-fluid" alt="" src="assets/img/Tableware%20And%20Dinner%20Set.jpg">
-                    <h4 class="text-center bg-light py-2">Table Ware</h4>
-                </div>
-                <div class="col-md-3">
-                  <img class="img-fluid" alt="" src="assets/img/Chaffing%20Dishesh.jpg">
-                    <h4 class="text-center bg-light py-2">Chaffing Dishesh</h4>
-                </div>
+
+                
+                
+                <?php
+                    }
+                ?>
             </div>
+            
             <div class="text-center mt-5">
-              <a href="products.php" class="btn btn-outline-danger px-5" type="button">View All
-            </a>
+              <a href="productcategory.php?ParentCategory=<?php echo $ParentCategory;?>" class="btn btn-outline-danger px-5" type="button">View All
+             </a>
             </div>
+            
+            <?php
+                    }
+            ?>
+            
         </div>
     </section>
   <!-- show producy info end -->
@@ -326,583 +185,52 @@ include('header.php');
     <section class="product-slider-1">
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
-                <h2 class="text-dark font-weight-bold">BestSellers</h2>
-                <a href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
+                <h2 class="text-dark font-weight-normal">BestSellers</h2>
+                <a href="products.php?BestSellers=X" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-1-items py-3">  
-                <li>
-                  <div class="card">
-                      <figure>
-                          <img class="img-fluid" alt="" src="assets/img/products/bottels.jpg">
-                      </figure>
-                      <div class="card-body">
-                        <div class="d-flex mb-2">
-                            <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                            <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                            <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                            <i class="fa fa-star mr-1" style=""></i>
-                            <i class="fa fa-star" style=""></i>
-                        </div>
-                        <h4 class="card-title mb-1 test-dark">Clay Boottel</h4>
-                        <span class="d-block text-gray">&#x20B9;200</span>
-                        <div class="card-value mt-2">
-                            <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                View Details
-                            </a>
-                            <button class="btn btn-outline-success btn-sm" type="button">
-                                Add to Cart
-                            </button>
-                        </div>
-                      </div>
-                    </div>
-                </li>      		
-                <li>
-                  <div class="card">
-                      <figure>
-                          <img class="img-fluid" alt="" src="assets/img/products/handi.jpg">
-                      </figure>
-                
-                      <div class="card-body">
-                          <div class="d-flex mb-2">
-                              <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                              <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                              <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                              <i class="fa fa-star mr-1" style=""></i>
-                              <i class="fa fa-star" style=""></i>
-                          </div>
-                          <h4 class="card-title mb-1 test-dark">Biryani Handi</h4>
-                          <span class="d-block text-gray">&#x20B9;200</span>
-                          <div class="card-value mt-2">
-                              <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                  View Details
-                              </a>
-                              <button class="btn btn-outline-success btn-sm" type="button">
-                                  Add to Cart
-                              </button>
-                          </div>
-                        </div>
-                    </div>
-                </li> 
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/bowls.jpg">
-                        </figure>
-                        
-                        <div class="card-body shadow">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title  mb-1 test-dark">Clay Bowls</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                   Add to Cart
-                                </button>
-                            </div>
-                          </div>
-                    </div>
-                </li> 
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/plate.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title  mb-1 test-dark">Clay Plate</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                  Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/cups.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title  mb-1 test-dark">Clay Cups</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                  View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                   Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <figure>
-                             <img class="img-fluid" alt="" src="assets/img/products/cup%20sets.jpg">
-                        </figure>
-                       
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title  mb-1 test-dark">Clay Tea Set</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                      </div>
-                </li>  
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/tradional-deco.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title  mb-1 test-dark">Traditional Clay Decorations</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                  View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/flower-pots.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title  mb-1 test-dark">Flowers Clay Pots</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                   View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
+            <?php
+            $result = "SELECT * FROM `products` ORDER BY `Rating` DESC LIMIT 7";
+                    $data = mysqli_query($DBcon,$result);
+                    $sr = 1;
+                    while($products = mysqli_fetch_array($data))
+                    {
+                        include('productcard.php');
+                    }
+                ?>
+
             </ul>	
       </div>
     </section>
     <!-- Product slider-1 end -->
 
-       <!-- show product section start -->
-    <section class="show-product">
-        <div class="container">
-             <div class="row">
-               <div class="col-12 col-md-12 col-lg-3 card b-top mb-4">
-                    <h3 class="fs-20 font-weight-bold mb-3">Grocery & many more</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                            <img class="img-fluid img-thumbnail" alt="" src="assets/img/logo-for-grocery-store-vector-21609822.jpg">
-                            <h5>Heading</h5>
-                        </div>
-                        <div>
-                            <img class="img-fluid img-thumbnail"  src="assets/img/logo-for-grocery-store-vector-22845012.jpg" alt="img">
-                            <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/preview_d4c97a66f5f11de5ac4979468b8c7cf6.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div> 
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3 card  mb-4">
-                    <h3 class="fs-20  font-weight-bold mb-3">Clay Pots & Home essentials</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"   src="assets/img/Cookware.jpg" alt="img">
-                        <h5>Electicians</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/Naturally%20Non%20Stick.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/Tableware%20And%20Dinner%20Set.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/Chaffing%20Dishesh.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>                 
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3 card mb-4">
-                    <h3 class="fs-20 font-weight-bold mb-3">Trandy cloths</h3>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                        <div>
-                        <img class="img-fluid img-thumbnail"  src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                        <h5>Heading</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                    </div>               
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3  card mb-4">
-                        <h3 class="fs-20 font-weight-bold mb-3">Stationery</h3>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between w-100 mb-4">
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                            <div>
-                            <img class="img-fluid img-thumbnail img-thumbnail" src="assets/img/stock-vector-grocery-store-logo-template-concept-bag-of-different-food-1017069055.jpg" alt="img">
-                            <h5>Heading</h5>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#FIXME" class="fs-14 a-color">Grocery Shops Near you</a>
-                        </div>
-                </div>    
-           </div>
-
-        </div>
-    </section>
-    <!-- show product section end -->
-
     <!-- Product slider-2 start -->
     <section class="product-slider-2">
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
-                <h2 class="text-dark font-weight-bold">Best Deals</h2>
-                <a  href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
+                <h2 class="text-dark font-weight-normal">Best Deals</h2>
+                <a  href="products.php?BestDeals=X" class="btn btn-primary b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-2-items py-3">  
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt=""  src="assets/img/products/flower-pots.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Flowers Clay Pots</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-                
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/bottels.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Clay Boottel</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>    
 
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/cups.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Clay Cups</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                   View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                     Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/handi.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Biryani Handi</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                   View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/bowls.jpg">
-                        </figure>
-                        
-                        <div class="card-body shadow">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Clay Bowls</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                  View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                   Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/plate.jpg">
-                        </figure>
-                        
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Clay Plate</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li> 
-
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/tradional-deco.jpg">
-                        </figure>
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Traditional Clay Decorations</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="card">
-                        <figure>
-                            <img class="img-fluid" alt="" src="assets/img/products/cup%20sets.jpg">
-                        </figure>
-                        <div class="card-body">
-                            <div class="d-flex mb-2">
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style="color: #ffc940;"></i>
-                                <i class="fa fa-star mr-1" style=""></i>
-                                <i class="fa fa-star" style=""></i>
-                            </div>
-                            <h4 class="card-title fs-16 mb-1 test-dark">Clay Tea Set</h4>
-                            <span class="d-block text-gray">&#x20B9;200</span>
-                            <div class="card-value mt-2">
-                                <a href="productdetail.php" class="btn btn-outline-primary btn-sm">
-                                    View Details
-                                </a>
-                                <button class="btn btn-outline-success btn-sm" type="button">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>  
+                 <?php
+            $result = "SELECT * FROM `products` WHERE `OldCost` != '' ";
+            //echo $result;
+                    $data = mysqli_query($DBcon,$result);
+                    $sr = 1;
+                    while($products = mysqli_fetch_array($data))
+                    {
+                        include('productcard.php');
+                    }
+                ?>
                  
             </ul>	
       </div>
     </section>
        <!-- Product slider-2 end -->
+       
  <!-- contact us section start-->
     <section class="contact">
         <div class="container">
@@ -958,3 +286,31 @@ include('header.php');
 <?php 
     include('footer.php');
 ?>
+
+<script>
+
+$(document).ready(function(){
+    
+    $('.ccount').load('Sopping_cart_add.php',function(){
+        //$('#myModal').modal({show:true});
+    });
+    
+    
+    $("form").on("submit", function(event){
+        event.preventDefault();
+ 
+        var formValues= $(this).serialize();
+ 
+        $.post("Sopping_cart_add.php?action=add", formValues, function(data){
+            // Display the returned data in browser
+            $("#result").html(data);
+        });
+        
+         $('.ccount').load('Sopping_cart_add.php',function(){
+        //$('#myModal').modal({show:true});
+    });
+        
+    });
+    
+});
+</script>

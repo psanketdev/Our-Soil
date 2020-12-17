@@ -1,4 +1,5 @@
 $(function () {
+  
   // function for fixed header
   $(window).on('scroll', function () {
     $('header').toggleClass('stickey', window.scrollY > 0);
@@ -37,10 +38,3 @@ $('.card-group').slick({
   });
 
 })
-
-
-
-
-
-
-

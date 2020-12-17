@@ -1,5 +1,5 @@
 
-		<footer>	
+	<footer>	
 			<div class="container">
 				<div class="mb-5">
 					<div class="row">
@@ -35,22 +35,53 @@
 				<p class="copyright">Company Name © 2017</p>
 			</div>
 		</footer>
-		
-	
-	
-	<!-- bootstarp js -->
+
+		<!-- stickey nav in mobile -->
+
+<div class="forMobile-icons stickey-icons py-2 w-100 b-shadow d-lg-none d-sm-block">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-3">
+                <a href="#!" class="active">
+                    <i class="fa fa-home  d-block" aria-hidden="true"></i>
+                     <span class="d-block fs-14">Home</span>
+                </a>
+            </div>
+             <div class="col-3">
+                <a href="#!">
+                    <i class="fa fa-window-restore  d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-14">Categories</span>
+                </a>
+            </div>
+             <div class="col-3">
+                <a href="#!">
+                    <i class="fa fa-cart-plus  d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-14">Cart</span>
+                </a>
+            </div>
+             <div class="col-3">
+                <a href="#!">
+                    <i class="fa fa-user  d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-14">Profile</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<!-- bootstarp js -->
 		<script src="assets/vendor/jquery/jquery.min.js" ></script>
 		<script src="assets/bootstrap/js/popper.min.js" ></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 		<!-- slick js -->
 		<script src="assets/vendor/slick/slick.min.js"></script>
-		
+
 		<!-- chart js -->
-    <!-- <script src="assets/vender/chart/chart.min.js"></script>  -->
-		
+		<script src="assets/vender/chart/chart.min.js"></script> 
+
 		<!-- aos js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 
 		<!-- custome js -->
 		<script src="assets/js/bs-animation.js"></script>
@@ -61,6 +92,35 @@
 		<script src="assets/js/script.js"></script>
 		<!-- custome js -->
 
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    
+    $('.ccount').load('Sopping_cart_add.php',function(){
+        //$('#myModal').modal({show:true});
+    });
+    
+    
+    $("form").on("submit", function(event){
+        event.preventDefault();
+ 
+        var formValues= $(this).serialize();
+ 
+        $.post("Sopping_cart_add.php?action=add", formValues, function(data){
+            // Display the returned data in browser
+            $("#result").html(data);
+        });
+        
+         $('.ccount').load('Sopping_cart_add.php',function(){
+        //$('#myModal').modal({show:true});
+    });
+        
+    });
+    
+});	
+</script>
+
+		
 	</body>
 
 </html>

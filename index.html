@@ -909,4 +909,32 @@
     });
 </script>
 
+<script>
+
+$(document).ready(function(){
+    
+    $('.ccount').load('Sopping_cart_add.php',function(){
+        //$('#myModal').modal({show:true});
+    });
+    
+    
+    $("form").on("submit", function(event){
+        event.preventDefault();
+ 
+        var formValues= $(this).serialize();
+ 
+        $.post("Sopping_cart_add.php?action=add", formValues, function(data){
+            // Display the returned data in browser
+            $("#result").html(data);
+        });
+        
+         $('.ccount').load('Sopping_cart_add.php',function(){
+        //$('#myModal').modal({show:true});
+    });
+        
+    });
+    
+});
+</script>
+
 </html>

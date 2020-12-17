@@ -2,6 +2,7 @@
     include('header.php');
 ?>
 
+
 <div>
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
@@ -43,7 +44,7 @@
                                         <h6 class="dropdown-header">alerts center</h6>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="mr-3">
-                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                                <div class="bg-primary icon-circle"><i class="fa fa-file-alt text-white"></i></div>
                                             </div>
                                             <div><span class="small text-gray-500">December 12, 2019</span>
                                                 <p>A new monthly report is ready to download!</p>
@@ -51,7 +52,7 @@
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="mr-3">
-                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                                <div class="bg-success icon-circle"><i class="fa fa-donate text-white"></i></div>
                                             </div>
                                             <div><span class="small text-gray-500">December 7, 2019</span>
                                                 <p>$290.29 has been deposited into your account!</p>
@@ -59,7 +60,7 @@
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="mr-3">
-                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                                <div class="bg-warning icon-circle"><i class="fa fa-exclamation-triangle text-white"></i></div>
                                             </div>
                                             <div><span class="small text-gray-500">December 2, 2019</span>
                                                 <p>Spending Alert: We've noticed unusually high spending for your account.</p>
@@ -76,7 +77,7 @@
                                             <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
-                                            <div class="font-weight-bold">
+                                            <div>
                                                 <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
                                                 <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
                                             </div>
@@ -85,7 +86,7 @@
                                             <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
                                                 <div class="status-indicator"></div>
                                             </div>
-                                            <div class="font-weight-bold">
+                                            <div>
                                                 <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
                                                 <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
                                             </div>
@@ -94,7 +95,7 @@
                                             <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
                                                 <div class="bg-warning status-indicator"></div>
                                             </div>
-                                            <div class="font-weight-bold">
+                                            <div>
                                                 <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
                                                 <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
                                             </div>
@@ -103,7 +104,7 @@
                                             <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
-                                            <div class="font-weight-bold">
+                                            <diva>
                                                 <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
                                                 <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
                                             </div>
@@ -118,7 +119,7 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fa fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a></div>
+                        <h3 class="text-dark mb-0 font-weight-normal">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fa fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a></div>
                     <div class="row">
                         <div class="col-md-6 col-xl-3 mb-4">
                             <div class="card shadow border-left-primary py-2">
@@ -339,68 +340,6 @@
         </div>
     </div>
 </div>
-
-    <!-- <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div> -->
-    <!-- <nav class="navbar navbar-light navbar-expand-md fixed-top border-primary navigation-clean-button" style="background-color: rgb(255,255,255);">
-        <div class="container-fluid"><a class="navbar-brand" href="#">E-Local</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">My Orders</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item dropdown megamenu"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Mega Menu&nbsp;</a>
-                        <div class="dropdown-menu animate slideIn" role="menu" style="background-color: #8ea7ff;">
-                            <div class="container" style="padding-top: 35px;padding-bottom: 35px;">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h1 class="text-white">Title</h1>
-                                        <hr style="background-color: #ffffff;">
-                                        <h5 class="text-white">Title 1</h5>
-                                        <h5 class="text-white">Title 2</h5>
-                                        <h5 class="text-white">Title 3</h5>
-                                        <h5 class="text-white">Title 4</h5>
-                                        <h5 class="text-white">Title 5</h5>
-                                        <h5 class="text-white">Title 6</h5>
-                                        <h5 class="text-white">Title 7</h5>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h1 class="text-white">Title</h1>
-                                        <hr style="background-color: #ffffff;">
-                                        <h5 class="text-white">Title 1</h5>
-                                        <h5 class="text-white">Title 2</h5>
-                                        <h5 class="text-white">Title 3</h5>
-                                        <h5 class="text-white">Title 4</h5>
-                                        <h5 class="text-white">Title 5</h5>
-                                        <h5 class="text-white">Title 6</h5>
-                                        <h5 class="text-white">Title 7</h5>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h1 class="text-white">Title</h1>
-                                        <hr style="background-color: #ffffff;"><img class="img-fluid" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                    </li>
-                </ul>
-                <div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Baby</button>
-                    <div class="dropdown-menu"><input type="text" class="form-control dropdown-search-input" placeholder="Search.."><a class="dropdown-item" href="#">Angular</a><a class="dropdown-item" href="#">Java</a><a class="dropdown-item" href="#">JavaScript</a></div>
-                </div><span class="navbar-text actions"> <a class="login" href="#"><i class="fa fa-shopping-cart" style="margin: 2px;"></i>2</a><a class="login" href="#">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span></div>
-            <div
-                class="dropdown no-arrow"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="avatars/avatar1.jpeg"></button>
-                <div
-                    class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
-                    <a
-                        class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
-        </div>
-        </div>
-    </nav> -->
-
 
 <?php 
     include('footer.php');

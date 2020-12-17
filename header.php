@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
 
   <title>soil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
@@ -14,7 +14,8 @@
   <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.css">
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 
@@ -112,41 +113,6 @@
           </div>
     </nav>
 </header>
-
-
-<!-- stickey nav in mobile -->
-
-<div class="forMobile-icons stickey-icons py-2 w-100 b-shadow d-lg-none d-sm-block">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-3">
-                <a href="#!" class="active">
-                    <i class="fa fa-home  d-block" aria-hidden="true"></i>
-                     <span class="d-block fs-14">Home</span>
-                </a>
-            </div>
-             <div class="col-3">
-                <a href="#!">
-                    <i class="fa fa-window-restore  d-block" aria-hidden="true"></i>
-                    <span class="d-block fs-14">Categories</span>
-                </a>
-            </div>
-             <div class="col-3">
-                <a href="#!">
-                    <i class="fa fa-cart-plus  d-block" aria-hidden="true"></i>
-                    <span class="d-block fs-14">Cart</span>
-                </a>
-            </div>
-             <div class="col-3">
-                <a href="#!">
-                    <i class="fa fa-user  d-block" aria-hidden="true"></i>
-                    <span class="d-block fs-14">Profile</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
 
        
 

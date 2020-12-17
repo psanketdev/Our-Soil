@@ -12,7 +12,7 @@ include('header.php');
     <div class="row pb-5">
         <div class="col-md-7">
             <div class="mb-3">
-                <span class="fs-20">Products (3 items)</span>
+                <h2 class="mb-3 font-weight-normal">Products</h2>
             </div>
             
             <div class="border b-shadow row align-items-center mb-3">
@@ -30,17 +30,17 @@ include('header.php');
                                 <span>Color: Blue</span>
                                 <span>Size: M</span>
                             </div>
-                            <span class="d-block text-primary fs-16">Status : On the way<br></span>
+                            <span class="d-block text-primary fs-14">Status : On the way<br></span>
                             <span class="d-block fs-14">Expected Delivery on</span>
                             <span class="d-block fs-14 text-secondary">29-09-2020</span>
                         </div>
                         <div class="d-flex flex-column align-items-end">
                             <div>
-                                <span class="fs-16 text-info">Quantity</span>
+                                <span class="fs-14 text-info">Quantity</span>
                                 <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
                             <div class="pt-5">
-                                <span class="fs-20 text-gray font-weight-bold">$121</span>
+                                <span class="fs-20 text-gray font-weight-bolder">$121</span>
                             </div>
                         </div>
                     </div>
@@ -66,32 +66,31 @@ include('header.php');
                                 <span>Color: Blue</span>
                                 <span>Size: M</span>
                             </div>
-                            <span class="d-block text-primary fs-16">Status : On the way<br></span>
+                            <span class="d-block text-primary fs-14">Status : On the way<br></span>
                             <span class="d-block fs-14">Expected Delivery on</span>
                             <span class="d-block fs-14 text-secondary">29-09-2020</span>
                         </div>
                         <div class="d-flex flex-column align-items-end">
-                            <div>
-                                <span class="fs-16 text-info">Quantity</span>
+                            <div class="mb-auto">
+                                <span class="fs-14 text-info">Quantity</span>
                                 <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
                             <div class="pt-5">
-                                <span class="fs-20 text-gray font-weight-bold">$121</span>
+                                <span class="fs-20 text-gray font-weight-bolder">$121</span>
                             </div>
                         </div>
                     </div>
                     <div>
                         <button class="btn btn-danger btn-sm" type="button">Cancel Order</button>
-                        <!-- <button class="btn btn-secondary btn-sm" type="button"> Add Your Review</button> -->
                     </div>                  
                 </div>
             </div>
 
         </div>
 
-        <div class="col-md-5 bg-light h-100 pt-1 pb-4 px-2">
+        <div class="col-md-5 bg-light h-100 py-3 px-2">
             <div>
-                <h3 class="mb-3">The total amount of<br></h3>
+                <h2 class="mb-3 font-weight-normal">The Total Amount of</h2>
                 <div class="table-responsive table-hover">
                     <table class="table">
                         <thead>
@@ -122,7 +121,6 @@ include('header.php');
         </div>
 
     </div>
-
 <?php 
     include('footer.php');
 ?>

@@ -15,17 +15,15 @@ $(function() {
   });
   
   // Zoom in on mouseover and zoom out on mouseout
-  // $('.product-image .image')
-  // .on('mouseover', function() {
-  //   $(this).css('transform', 'scale(1.2)');
-  // })
-  // .on('mouseout', function() {
-  //   $(this).css('transform', 'scale(1.0)');
-  // })
-  // .on('mousemove', function(e){
-  //   $(this).css(
-  //     { 'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%' }
-  //     );
-  //  });
+  $('.product-image .image')
+  .on('mouseover', function() {
+    $(this).css('transform', 'scale(2)');
+  })
+  .on('mouseout', function() {
+    $(this).css('transform', 'scale(1.0)');
+  })
+  .on('mousemove', function(e){
+      $(this).css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+   });
 });
 

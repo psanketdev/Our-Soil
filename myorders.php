@@ -1,16 +1,15 @@
 <?php 
 include('header.php');
 ?>
-    <!-- <div style="background-image: url(&quot;assets/img/order-banner.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;background-repeat: no-repeat;"></div> -->
-    <section>
-        <ol class="breadcrumb">
+   <section>
+        <ol class="breadcrumb"  style="margin-top: 60px;">
             <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
             <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
             <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
         </ol>
         <div class="row py-5">
             <div class="col-md-3">
-                <h2 class="mb-3">Filter</h2>
+                <h2 class="mb-3 font-weight-normal">Filter</h2>
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-prepend"><span class="input-group-text">Addon</span></div><input class="form-control" type="text">
@@ -36,7 +35,7 @@ include('header.php');
             </div>
             <div class="col-md-9">
                 <div class="d-flex justify-content-between w-100 mb-3">
-                    <h2>My Orders</h2>
+                    <h2 class="font-weight-normal">My Orders</h2>
                     <div class="form-group mb-0 pull-right col-lg-4">
                         <input type="text" class="search form-control" placeholder="Search by typing here..">
                     </div>
@@ -99,7 +98,6 @@ include('header.php');
             </div>
         </div>
     </section>
-
     <?php 
     include('footer.php');
 ?>
