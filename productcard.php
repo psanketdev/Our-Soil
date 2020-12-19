@@ -1,7 +1,7 @@
  <li>
       <div class="card">
                       <figure>
-                          <img class="img-fluid" alt="" src="<?php echo $products['Thumbnail'];?>">
+                          <img class="img-fluid img-thumbnail" alt="" src="<?php echo $products['Thumbnail'];?>">
                       </figure>
                       <div class="card-body">
                         <div class="d-flex mb-2">

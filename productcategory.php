@@ -5,7 +5,7 @@ $ParentCategory = $_GET['ParentCategory'];
 
 ?>
     </div>
-    <div data-bs-parallax-bg="true" style="background-image: url(&quot;assets/img/clay%20pot%20import.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;"></div>
+
     <section class="new-products">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
@@ -13,7 +13,7 @@ $ParentCategory = $_GET['ParentCategory'];
             <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
         </ol>
 
-   <!-- show producy info start -->
+    <!-- show producy info start -->
     <section class="product-info">
         <div class="container">
              <?php
@@ -39,9 +39,9 @@ $ParentCategory = $_GET['ParentCategory'];
                     {
                     ?>
                 
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><img class="img-fluid" alt="" src="<?php echo $category['Thumbnail']; ?>"></a>
-                    <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><h4 class="text-center text-light-gray mt-2 py-2"><?php echo $category['CategoryName']; ?></h4></a>
+                    <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><h4 class="text-center text-light-gray"><?php echo $category['CategoryName']; ?></h4></a>
                 </div>
 
                 
@@ -51,7 +51,7 @@ $ParentCategory = $_GET['ParentCategory'];
                 ?>
             </div>
             
-            <div class="text-center mt-5">
+            <div class="text-center mt-4">
               <a href="productcategory.php?ParentCategory=<?php echo $ParentCategory;?>" class="btn btn-outline-danger px-5" type="button">View All
              </a>
             </div>
@@ -69,7 +69,7 @@ $ParentCategory = $_GET['ParentCategory'];
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-normal">BestSellers</h2>
-                <a href="products.php?BestSellers=X" class="btn btn-primary b-radius fs-14">View All</a>
+                <a href="products.php?BestSellers=X" class="btn btn-primary btn-sm b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-1-items py-3">  
@@ -91,7 +91,7 @@ $ParentCategory = $_GET['ParentCategory'];
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-normal">Best Deals</h2>
-                <a  href="products.php?BestDeals=X" class="btn btn-primary b-radius fs-14">View All</a>
+                <a  href="products.php?BestDeals=X" class="btn btn-primary btn-sm b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-2-items py-3">  

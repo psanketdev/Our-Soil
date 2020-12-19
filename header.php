@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" media="screen" href="assets/css/style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 </head>
 
 

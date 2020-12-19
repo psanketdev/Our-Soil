@@ -66,7 +66,7 @@ $id = $_GET['id'];
         </div>
         <div class="col-md-3">
             <div>
-                <h2 class="font-weight-noraml mb-3">Reviews</h2>
+                <h2 class="font-weight-normal mb-3 fs-20">Reviews</h2>
                 <div><i class="fa fa-star" style="margin: 5px;color: #ffc940;"></i><i class="fa fa-star" style="margin: 5px;color: #ffc940;"></i><i class="fa fa-star" style="margin: 5px;color: #ffc940;"></i><i class="fa fa-star" style="margin: 5px;"></i>
                     <i
                         class="fa fa-star" style="margin: 5px;"></i>
@@ -103,7 +103,7 @@ $id = $_GET['id'];
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-normal">Related Product</h2>
-                <a href="products.php" class="btn btn-primary b-radius fs-14">View All</a>
+                <a href="products.php" class="btn btn-primary btn-sm b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-1-items">  

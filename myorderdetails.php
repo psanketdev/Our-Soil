@@ -35,7 +35,7 @@ include('header.php');
                             <span class="d-block fs-14 text-secondary">29-09-2020</span>
                         </div>
                         <div class="d-flex flex-column align-items-end">
-                            <div>
+                            <div class="text-right">
                                 <span class="fs-14 text-info">Quantity</span>
                                 <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
@@ -71,7 +71,7 @@ include('header.php');
                             <span class="d-block fs-14 text-secondary">29-09-2020</span>
                         </div>
                         <div class="d-flex flex-column align-items-end">
-                            <div class="mb-auto">
+                            <div class="text-right">
                                 <span class="fs-14 text-info">Quantity</span>
                                 <input class="border rounded" type="number" style="background-color: rgb(246,250,255);height: 38px;width: 56.95px;padding: 6px 12px;" value="1">
                             </div>
@@ -91,7 +91,7 @@ include('header.php');
         <div class="col-md-5 bg-light h-100 py-3 px-2">
             <div>
                 <h2 class="mb-3 font-weight-normal">The Total Amount of</h2>
-                <div class="table-responsive table-hover">
+                <div class="table-responsive table-hover orderDetailTable">
                     <table class="table">
                         <thead>
                             <tr></tr>

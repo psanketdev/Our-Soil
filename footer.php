@@ -38,31 +38,31 @@
 
 		<!-- stickey nav in mobile -->
 
-<div class="forMobile-icons stickey-icons py-2 w-100 b-shadow d-lg-none d-sm-block">
+<div class="forMobile-icons stickey-icons pt-3 pb-2 w-100 b-shadow d-lg-none d-sm-block">
     <div class="container">
         <div class="row text-center">
             <div class="col-3">
                 <a href="#!" class="active">
                     <i class="fa fa-home  d-block" aria-hidden="true"></i>
-                     <span class="d-block fs-14">Home</span>
+                     <span class="d-block fs-12">Home</span>
                 </a>
             </div>
              <div class="col-3">
                 <a href="#!">
-                    <i class="fa fa-window-restore  d-block" aria-hidden="true"></i>
-                    <span class="d-block fs-14">Categories</span>
+                    <i class="fa fa-window-restore pl-2 d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-12">Categories</span>
                 </a>
             </div>
              <div class="col-3">
                 <a href="#!">
-                    <i class="fa fa-cart-plus  d-block" aria-hidden="true"></i>
-                    <span class="d-block fs-14">Cart</span>
+                    <i class="fa fa-shopping-bag d-block" aria-hidden="true"></i>
+                    <span class="d-block fs-12">Cart</span>
                 </a>
             </div>
              <div class="col-3">
                 <a href="#!">
                     <i class="fa fa-user  d-block" aria-hidden="true"></i>
-                    <span class="d-block fs-14">Profile</span>
+                    <span class="d-block fs-12">Profile</span>
                 </a>
             </div>
         </div>
@@ -70,7 +70,8 @@
 </div>
 
 		<!-- bootstarp js -->
-		<script src="assets/vendor/jquery/jquery.min.js" ></script>
+		<!-- <script src="assets/vendor/jquery/jquery.min.js" ></script> -->
+		<script src="assets/vendor/jquery/jquery-2.2.0.min.js"></script>
 		<script src="assets/bootstrap/js/popper.min.js" ></script>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 

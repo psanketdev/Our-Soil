@@ -6,7 +6,7 @@ include('config.php');
     <!--<div data-bs-parallax-bg="true" style="background-image: url(&quot;assets/img/clay%20pot%20import.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;"></div>-->
     <br><br><br>
     <section class="new-products">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb" style="margin-top: -12px;">
             <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
             <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
             <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
@@ -16,115 +16,97 @@ include('config.php');
                <div class="mb-3">
                   <h2 class="text-dark font-weight-normal">Filters</h2>
                </div>
-                <div class="filter_content">
+                <div class="filter_content border-0">
 					<ul class="list-group">
-						<li class="list-group-item">
-							<h5>Categories</h5>
-							<h6>Fruits & vegetables</h6>
-							<ul class="list-group">
-								<li class="list-group-item"><a href="#FIXME" title="Apples"><span>Apples</span></a></li>
-								<li class="list-group-item"><a href="#FIXME" title="Apples"><span>Apples</span></a></li>
-								<li class="list-group-item"><a href="#FIXME" title="Apples"><span>Apples</span></a></li>
-								<li class="list-group-item"><a href="#FIXME" title="Apples"><span>Apples</span></a></li>
-								<li class="list-group-item"><a href="#FIXME" title="Apples"><span>Apples</span></a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="list-group">
-						<li class="list-group-item">
-							<h5>Brand</h5>
-							<div class="form-group search">
-							<input type="text" name="" id="" placeholder="search" class="form-control form-control-sm">
-							<i class="fa fa-search filter-search" aria-hidden="true"></i>	
+						<li class="list-group-item px-2">
+							<h5 class="fs-16 mb-3">Categories</h5>
+								<div class="form-group search">
+								<input type="text" name="" id="" placeholder="Search Product Here.." class="form-control form-control-sm">
+								<i class="fa fa-search filter-search pl-3" aria-hidden="true"></i>	
 							</div>
+							<hr>
+							<h6 class="fs-14 mb-3">Fruits & vegetables</h6>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#FIXME" title="Thalis" class="text-dark font-weight-normal fs-14"><span>Thalis</span></a></li>
+								<li class="list-group-item"><a href="#FIXME" title="Bowls" class="text-dark font-weight-normal fs-14"><span>Bowls</span></a></li>
+								<li class="list-group-item"><a href="#FIXME" title="Tea Cups Sets" class="text-dark font-weight-normal fs-14"><span>Tea Cups Sets</span></a></li>
+								<li class="list-group-item"><a href="#FIXME" title="Flowers Plot" class="text-dark font-weight-normal fs-14"><span>Flowers Plot</span></a></li>
+								<li class="list-group-item"><a href="#FIXME" title="Jugs" class="text-dark font-weight-normal fs-14"><span>Jugs</span></a></li>
+							</ul>
+							
+						</li>
+					</ul>
+
+					</ul>
+					<!-- <ul class="list-group">
+						<li class="list-group-item px-2">
+							<h5 class="fs-14 mb-3">Seasonal</h5>
+								<hr>
 							<ul class="list-group checkbox_list">
-							<li class="form-check form-check-inline">
+							<li class="form-check form-check-inline mb-1">
 								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">bb Combo</label>
+								<label class="form-check-label text-dark fs-14" for="exampleCheck1">Pooja Item</label>
 							</li>
-							<li class="form-check form-check-inline">
+							<li class="form-check form-check-inline mb-1">
 								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Farmogo</label>
+								<label class="form-check-label text-dark fs-14" for="exampleCheck1">Summer Fruits</label>
 							</li>
-							<li class="form-check form-check-inline">
+							<li class="form-check form-check-inline mb-1">
 								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Fresho</label>
+								<label class="form-check-label text-dark fs-14" for="exampleCheck1">Summer Veggi</label>
 							</li>
-							<li class="form-check form-check-inline">
+							<li class="form-check form-check-inline mb-1">
 								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Toda</label>
+								<label class="form-check-label text-dark fs-14" for="exampleCheck1">Winter Fruits</label>
+							</li>
+							</ul>
+						</li>
+					</ul> -->
+					<ul class="list-group">
+						<li class="list-group-item px-2">
+							<h5 class="fs-14 mb-3">Price</h5>
+								<hr>
+							<ul class="list-group checkbox_list filter-options">
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck1">less than Rs 20</label>
+							</li>
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck2">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck2">less than Rs 50</label>
+							</li>
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck3">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck3">less than Rs 200</label>
+							</li>
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck4">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck4">More than Rs 500</label>
 							</li>
 								
 							</ul>
 						</li>
 					</ul>
 					<ul class="list-group">
-						<li class="list-group-item">
-							<h5>Seasonal</h5>
-							<ul class="list-group checkbox_list">
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Pooja Item</label>
+						<li class="list-group-item px-2">
+							<h5 class="fs-14 mb-3">Discount</h5>
+								<hr>
+							<ul class="list-group checkbox_list filter-options">
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck5">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck5">less than Rs 20</label>
 							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Summer Fruits</label>
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck6">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck6">less than Rs 50</label>
 							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Summer Veggi</label>
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck7">
+								<label class="form-check-label  text-dark fs-14" for="exampleCheck7">less than Rs 200</label>
 							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">Winter Fruits</label>
-							</li>
-								
-							</ul>
-						</li>
-					</ul>
-					<ul class="list-group">
-						<li class="list-group-item">
-							<h5>Price</h5>
-							<ul class="list-group checkbox_list">
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">less than Rs 20</label>
-							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">less than Rs 50</label>
-							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">less than Rs 200</label>
-							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">More than Rs 500</label>
-							</li>
-								
-							</ul>
-						</li>
-					</ul>
-					<ul class="list-group">
-						<li class="list-group-item">
-							<h5>Discount</h5>
-							<ul class="list-group checkbox_list">
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">less than Rs 20</label>
-							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">less than Rs 50</label>
-							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">less than Rs 200</label>
-							</li>
-							<li class="form-check form-check-inline">
-								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
-								<label class="form-check-label" for="exampleCheck1">More than Rs 500</label>
+							<li class="form-check form-check-inline mb-1">
+								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck8">
+								<label class="form-check-label text-dark fs-14" for="exampleCheck8">More than Rs 500</label>
 							</li>
 								
 							</ul>
@@ -138,7 +120,7 @@ include('config.php');
                     <div class="mb-3">
                         <h2 class="text-dark font-weight-normal">Products</h2>
                     </div>
-                    <ul class="d-flex">  
+                    <ul class="d-flex products-card">  
                     
                      <?php
             $result = "SELECT * FROM `products`";

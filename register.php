@@ -42,7 +42,7 @@
         </div>
         </div>
     </nav>
-    <div class="register-photo" style="margin-top: 55px; padding: 110px 0 150px; background-color: rgb(193,218,239);">
+    <div class="register-photo" style="margin-top: 55px; padding: 100px 0; background-color: rgb(193,218,239);">
         <div class="form-container" style="max-width: 400px;">
             <form method="post">
                 <h2 class="text-dark fs-20 text-center mb-3"><strong>Create</strong> an account.</h2>

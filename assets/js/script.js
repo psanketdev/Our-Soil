@@ -31,10 +31,23 @@ $('.card-group').slick({
     ]
 });
   
-
   $('.error-text').hide();
   $('input.form-control').blur(function () {
     $(this).parent().find('.error-text').show();
   });
+  
+});
 
-})
+  // fliters
+  $(document).ready(function () {
+    $('ul.checkbox_list').find('input[type="checkbox"]').click(function () {
+      if (('ul.checkbox_list li input[type="chechbox"]:checked').length > 0) {
+        $('.products-card li').hide();
+      }
+    });
+  })
+
+
+
+
+  

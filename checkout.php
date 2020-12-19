@@ -23,7 +23,7 @@ include('header.php');
                     <div id="collapseOne" class="collapse show item-1" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             <div>
-                                <h3 class="mb-3">The Total amount of</h3>
+                                <h2 class="mb-3 font-weight-normal">The Total amount of</h2>
                                 <div class="table-responsive">
                                     <table class="table table-hover">
                                         <thead>

@@ -33,7 +33,7 @@ include('config.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-6 mb-4">
-                    <h2 class="display-4 text-gray font-weight-light" data-aos="fade">
+                    <h2 class="display-4 text-gray font-weight-light mb-1" data-aos="fade">
                         <i class="fa fa-user-plus mr-2" style="color: #081c15;"></i>Register Today</h2>
                     <p class="text-dark">This will help you to get Shop and Service provider near
                         you</p>
@@ -156,9 +156,9 @@ include('config.php');
                     {
                     ?>
                 
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><img class="img-fluid" alt="" src="<?php echo $category['Thumbnail']; ?>"></a>
-                    <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><h4 class="text-center text-light-gray mt-2 py-2"><?php echo $category['CategoryName']; ?></h4></a>
+                    <a href="products.php?CategoryName=<?php echo $category['CategoryName'];?>"><h4 class="text-center text-light-gray"><?php echo $category['CategoryName']; ?></h4></a>
                 </div>
 
                 
@@ -168,7 +168,7 @@ include('config.php');
                 ?>
             </div>
             
-            <div class="text-center mt-5">
+            <div class="text-center mt-4">
               <a href="productcategory.php?ParentCategory=<?php echo $ParentCategory;?>" class="btn btn-outline-danger px-5" type="button">View All
              </a>
             </div>
@@ -186,7 +186,7 @@ include('config.php');
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-normal">BestSellers</h2>
-                <a href="products.php?BestSellers=X" class="btn btn-primary b-radius fs-14">View All</a>
+                <a href="products.php?BestSellers=X" class="btn btn-primary btn-sm b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-1-items py-3">  
@@ -210,7 +210,7 @@ include('config.php');
       <div class="container">
             <div class="ml-4 mb-2 d-flex justify-content-between align-items-center pr-3">
                 <h2 class="text-dark font-weight-normal">Best Deals</h2>
-                <a  href="products.php?BestDeals=X" class="btn btn-primary b-radius fs-14">View All</a>
+                <a  href="products.php?BestDeals=X" class="btn btn-primary btn-sm b-radius fs-14">View All</a>
             </div>
             <hr>
             <ul class="card-group product-slider-2-items py-3">  
@@ -237,7 +237,7 @@ include('config.php');
             <div class="contact-clean">
                 <form method="post" class="b-radius">
                    <div class="ml-4 mb-4">
-                        <h2 class="text-dark font-weight-bold text-center">Contact Us</h2>
+                        <h2 class="text-dark font-weight-normal text-center">Contact Us</h2>
                     </div>
                     <div class="form-group">
                         <input class="form-control" type="text" name="name" placeholder="Name">
@@ -261,18 +261,18 @@ include('config.php');
     <section class="band-trust">
         <div class="container">
             <div class="mb-4">
-                <h2 class="text-dark font-weight-bold text-center fs-20">Band Of Trust</h2>
+                <h2 class="text-dark font-weight-normal text-center fs-20">Band Of Trust</h2>
             </div>
             <div class="row justify-content-center text-center">
-                <div class="col-md-4 col-lg-4 mb-3">
+                <div class="col-4 col-md-4 col-lg-4 mb-3">
                     <i class="fa fa-heart text-danger" aria-hidden="true"></i>
                     <span class="d-block">Great Selection</span>
                 </div>
-                <div class="col-md-4 col-lg-4 middle mb-3">
+                <div class="col-4 col-md-4 col-lg-4 middle mb-3">
                     <i class="fa fa-inr text-success" aria-hidden="true"></i>
                     <span class="d-block">Low Price</span>
                 </div>
-                <div class="col-md-4 col-lg-4 mb-3">
+                <div class="col-4 col-md-4 col-lg-4 mb-3">
                     <i class="fa fa-shopping-cart text-warning" aria-hidden="true"></i>
                     <span class="d-block">Speedy Delivery</span>
                 </div>
@@ -301,7 +301,7 @@ $(document).ready(function(){
  
         var formValues= $(this).serialize();
  
-        $.post("Sopping_cart_add.php?action=add", formValues, function(data){
+        $post("Sopping_cart_add.php?action=add", formValues, function(data){
             // Display the returned data in browser
             $("#result").html(data);
         });

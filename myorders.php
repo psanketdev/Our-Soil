@@ -40,7 +40,7 @@ include('header.php');
                         <input type="text" class="search form-control" placeholder="Search by typing here..">
                     </div>
                 </div>
-                <div class="col-md-12 search-table-col pl-0">     
+                <div class="col-md-12 table-responsive search-table-col pl-0">     
                         <table class="table table-bordered table-hover">
                             <thead class="bill-header cs">
                                 <tr>
